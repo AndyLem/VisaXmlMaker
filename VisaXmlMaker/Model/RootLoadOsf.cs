@@ -54,6 +54,11 @@ namespace VisaXmlMaker.Model
         [XmlElement(ElementName="d_sapruga", IsNullable=false)]
         public Sapruga sapruga;
 
+        /// <summary>
+        /// visa application data
+        /// </summary>
+        [XmlElement(ElementName="d_molba")]
+        public Molba molba;
 
         public RootLoadOsf()
         {
@@ -61,8 +66,9 @@ namespace VisaXmlMaker.Model
             lcuz = new Lcuz();
             lcDop = new LcDop();
             basta = new Basta();
-            sapruga = new Sapruga();
             maika = new Maika();
+            sapruga = new Sapruga();
+            molba = new Molba();
         }
     }
 }

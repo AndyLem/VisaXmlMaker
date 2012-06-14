@@ -12,6 +12,7 @@ namespace VisaTest
     [TestClass]
     public class SubItemsSerializer
     {
+        private static object vidus;
         [TestMethod]
         public void RootTest()
         {
@@ -21,6 +22,8 @@ namespace VisaTest
             srcRoot.lcDop = CreateLcDop();
             srcRoot.basta = CreateBasta();
             srcRoot.maika = CreateMaika();
+            srcRoot.sapruga = CreateSapruga();
+            srcRoot.molba = CreateMolba();
 
             string fileName = Path.GetTempFileName();
             FileStream fs = File.Create(fileName);
@@ -30,7 +33,7 @@ namespace VisaTest
             RootLoadOsf dstRoot= (RootLoadOsf)ser.Deserialize(fs);
 
             fs.Close();
-            File.Delete(fileName);
+            //File.Delete(fileName);
 
             Assert.AreEqual(srcRoot.msgHeader.msgHeaderRow, dstRoot.msgHeader.msgHeaderRow, 
                 "Прочитанное значение MsgHeader отличается от переданного на запись");
@@ -42,7 +45,54 @@ namespace VisaTest
                 "Прочитанное значение Basta отличается от переданного на запись");
             Assert.AreEqual(srcRoot.maika.maikaRow, dstRoot.maika.maikaRow,
                 "Прочитанное значение Maika отличается от переданного на запись");
+            Assert.AreEqual(srcRoot.sapruga.saprugaRow, dstRoot.sapruga.saprugaRow,
+                "Прочитанное значение Sapruga отличается от переданного на запись");
+            Assert.AreEqual(srcRoot.molba.molbaRow, dstRoot.molba.molbaRow,
+                "Прочитанное значение Molba отличается от переданного на запись");
+        }
 
+        private static Molba CreateMolba()
+        {
+            Molba srcMolba = new Molba();
+            srcMolba.molbaRow = new MolbaRow()
+            {
+			    dat_vli = "2008-08-07",
+			    dat_izl = "2008-09-06",
+			    vidvis = "C",
+			    brvl = "1",
+			    vidus = "O",
+			    valvis = "",
+			    brdni = "30",
+			    cel = "GOS",
+			    celdruga = "",
+			    mol_dat_vav = "2008-08-05T13:20:43.92100",
+			    gratis = "N",
+			    imavisa = "",
+			    cenamol = "90.00",
+			    cenacurr = "USD",
+			    maindest = "BG",
+			    maindestnm = "ЛОМ",
+			    gkpp_darj = "BG",
+			    gkpp_text = "ГКПП АЕРОГАРА СОФИЯ",
+			    marsrut = "",
+                Text_ini = ""
+            };
+            return srcMolba;
+        }
+
+        private static Sapruga CreateSapruga()
+        {
+            Sapruga srcSapruga = new Sapruga();
+            srcSapruga.saprugaRow = new SaprugaRow()
+            {
+                sp_famil = "AL MAGHREBI",
+                sp_imena = "AYSHE",
+                sp_famil2 = "MUSTAPHA",
+                sp_datraj = "22/03/1977",
+                sp_mrjdarj = "GH",
+                sp_mrjnm = "ACCRA"
+            };
+            return srcSapruga;
         }
 
         private static MsgHeader CreateHeader()

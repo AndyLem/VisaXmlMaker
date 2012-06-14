@@ -11,7 +11,7 @@ namespace VisaXmlMaker.Model
     /// </summary>
     public class Maika
     {
-        [XmlElement(ElementName = "d_maika")]
+        [XmlElement(ElementName = "d_maika_row")]
         public MaikaRow maikaRow;
     }
 
