@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace VisaXmlMaker
 {
@@ -14,6 +15,7 @@ namespace VisaXmlMaker
         public MainForm()
         {
             InitializeComponent();
+            
         }
     }
 }

@@ -13,19 +13,6 @@ namespace VisaXmlMaker.Model
     {
         [XmlElement(ElementName="d_sapruga_row")]
         public SaprugaRow saprugaRow;
-
-        public Sapruga()
-        {
-            saprugaRow = new SaprugaRow()
-            {
-                sp_famil = "Famil",
-                sp_imena = "names",
-                sp_famil2 = "old famil",
-                sp_datraj = "2000-10-01",
-                sp_mrjdarj = "ctr",
-                sp_mrjnm = "cit"
-            };
-        }
     }
 
     public struct SaprugaRow

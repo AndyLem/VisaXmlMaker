@@ -52,7 +52,10 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Basta.cs" />
+    <Compile Include="Model\LcDop.cs" />
     <Compile Include="Model\Lcuz.cs" />
+    <Compile Include="Model\Maika.cs" />
     <Compile Include="Model\MsgHeader.cs" />
     <Compile Include="Model\NamespaceRemover.cs" />
     <Compile Include="Model\RootLoadOsf.cs" />
