@@ -60,6 +60,18 @@ namespace VisaXmlMaker.Model
         [XmlElement(ElementName="d_molba")]
         public Molba molba;
 
+        /// <summary>
+        /// Hosting person or organization or hotel
+        /// </summary>
+        [XmlElement(ElementName = "d_domakin", IsNullable = false)]
+        public Domakin domakin;
+
+        /// <summary>
+        /// EU or EEA family member information
+        /// </summary>
+        [XmlElement(ElementName = "d_euroda", IsNullable = false)]
+        public Euroda euroda;
+
         public RootLoadOsf()
         {
             msgHeader = new MsgHeader();
@@ -69,6 +81,8 @@ namespace VisaXmlMaker.Model
             maika = new Maika();
             sapruga = new Sapruga();
             molba = new Molba();
+            domakin = new Domakin();
+            euroda = new Euroda();
         }
     }
 }

@@ -53,6 +53,8 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Basta.cs" />
+    <Compile Include="Model\Domakin.cs" />
+    <Compile Include="Model\Euroda.cs" />
     <Compile Include="Model\LcDop.cs" />
     <Compile Include="Model\Lcuz.cs" />
     <Compile Include="Model\Maika.cs" />

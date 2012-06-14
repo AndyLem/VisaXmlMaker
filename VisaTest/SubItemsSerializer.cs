@@ -24,6 +24,8 @@ namespace VisaTest
             srcRoot.maika = CreateMaika();
             srcRoot.sapruga = CreateSapruga();
             srcRoot.molba = CreateMolba();
+            srcRoot.domakin = CreateDomakin();
+            srcRoot.euroda = CreateEuroda();
 
             string fileName = Path.GetTempFileName();
             FileStream fs = File.Create(fileName);
@@ -33,7 +35,7 @@ namespace VisaTest
             RootLoadOsf dstRoot= (RootLoadOsf)ser.Deserialize(fs);
 
             fs.Close();
-            //File.Delete(fileName);
+            File.Delete(fileName);
 
             Assert.AreEqual(srcRoot.msgHeader.msgHeaderRow, dstRoot.msgHeader.msgHeaderRow, 
                 "Прочитанное значение MsgHeader отличается от переданного на запись");
@@ -49,6 +51,58 @@ namespace VisaTest
                 "Прочитанное значение Sapruga отличается от переданного на запись");
             Assert.AreEqual(srcRoot.molba.molbaRow, dstRoot.molba.molbaRow,
                 "Прочитанное значение Molba отличается от переданного на запись");
+            Assert.AreEqual(srcRoot.domakin.domakinRow, dstRoot.domakin.domakinRow,
+                "Прочитанное значение Domakin отличается от переданного на запись");
+            Assert.AreEqual(srcRoot.euroda.eurodaRow, dstRoot.euroda.eurodaRow,
+                "Прочитанное значение Domakin отличается от переданного на запись");
+
+        }
+
+        private static Euroda CreateEuroda()
+        {
+            Euroda srcEuroda = new Euroda();
+            srcEuroda.eurodaRow = new EurodaRow()
+            {
+                eu_famil = "АЛ МАГРЕБИ",
+                eu_imena = "ПЕЙО ПЕЕВ",
+                eu_datraj = "11/12/1995",
+                eu_nac_bel = "BG",
+                eu_nac_pasp = "ZP1234567",
+                eu_rodstvo = "D"
+            };
+            return srcEuroda;
+        }
+
+        private static Domakin CreateDomakin()
+        {
+            Domakin srcDomakin = new Domakin();
+            srcDomakin.domakinRow = new DomakinRow()
+            {
+                dm_vid = "F",
+                nom_pok = "9876543210-234/12.09.2007",
+                dom_graj = "BG",
+                dom_famil = "СТОЯНОВ",
+                dom_ime = "ИВАН",
+                dom_egn = "",
+                dom_darj = "",
+                dom_nm = "",
+                dom_pk = "",
+                dom_adres = "",
+                dom_tel = "",
+                dom_fax = "",
+                dom_email = "",
+                ved_ekpou = "831022415Ю",
+                ved_ime = "КАНЕЩА ФИРМА СОФИЙСКА",
+                ved_darj = "BG",
+                ved_nm = "СОФИЯ",
+                ved_pk = "1000",
+                ved_adres = "АЛАБИН 24",
+                ved_tel = "2311444",
+                ved_fax = "6615782",
+                ved_email = "kanestafirma@sofia.bg"
+
+            };
+            return srcDomakin;
         }
 
         private static Molba CreateMolba()
