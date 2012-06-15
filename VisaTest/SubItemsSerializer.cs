@@ -39,7 +39,7 @@ namespace VisaTest
             RootLoadOsf dstRoot= (RootLoadOsf)ser.Deserialize(fs);
 
             fs.Close();
-            //File.Delete(fileName);
+            File.Delete(fileName);
 
             Assert.AreEqual(srcRoot.msgHeader.msgHeaderRow, dstRoot.msgHeader.msgHeaderRow, 
                 "Прочитанное значение MsgHeader отличается от переданного на запись");
