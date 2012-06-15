@@ -61,8 +61,10 @@
     <Compile Include="Model\Molba.cs" />
     <Compile Include="Model\MsgHeader.cs" />
     <Compile Include="Model\NamespaceRemover.cs" />
+    <Compile Include="Model\OldVisa.cs" />
     <Compile Include="Model\RootLoadOsf.cs" />
     <Compile Include="Model\Sapruga.cs" />
+    <Compile Include="Model\Voit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

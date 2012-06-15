@@ -12,7 +12,6 @@ namespace VisaTest
     [TestClass]
     public class SubItemsSerializer
     {
-        private static object vidus;
         [TestMethod]
         public void RootTest()
         {
@@ -26,6 +25,8 @@ namespace VisaTest
             srcRoot.molba = CreateMolba();
             srcRoot.domakin = CreateDomakin();
             srcRoot.euroda = CreateEuroda();
+            srcRoot.oldVisa = CreateOldVisa();
+            srcRoot.voit = CreateVoit();
 
             string fileName = Path.GetTempFileName();
             FileStream fs = File.Create(fileName);
@@ -35,7 +36,7 @@ namespace VisaTest
             RootLoadOsf dstRoot= (RootLoadOsf)ser.Deserialize(fs);
 
             fs.Close();
-            File.Delete(fileName);
+            //File.Delete(fileName);
 
             Assert.AreEqual(srcRoot.msgHeader.msgHeaderRow, dstRoot.msgHeader.msgHeaderRow, 
                 "Прочитанное значение MsgHeader отличается от переданного на запись");
@@ -56,6 +57,55 @@ namespace VisaTest
             Assert.AreEqual(srcRoot.euroda.eurodaRow, dstRoot.euroda.eurodaRow,
                 "Прочитанное значение Domakin отличается от переданного на запись");
 
+            Assert.AreEqual(srcRoot.oldVisa.oldVisaRows.Count, dstRoot.oldVisa.oldVisaRows.Count,
+                "Количество информации в OldVisa не совпадает");
+            Assert.AreEqual(srcRoot.oldVisa.oldVisaRows[0], dstRoot.oldVisa.oldVisaRows[0],
+                "Прочитанное значение OldVisa отличается от переданного на запись");
+
+            Assert.AreEqual(srcRoot.voit.voitRow, dstRoot.voit.voitRow,
+                "Прочитанное значение Voit отличается от переданного на запись");
+
+        }
+
+        private static Voit CreateVoit()
+        {
+            Voit srcVoit = new Voit();
+            srcVoit.voitRow = new VoitRow()
+            {
+                vnom = "5674664565-VOIT-667",
+                voit_datot = "2008-12-08",
+                voit_datdo = "2008-22-08",
+                vime = "BALKAN TUR LTD",
+                bgime = "НОВ БАЛКАНСКИ ТУР ОПЕРАТОР",
+                bgadres = "Х-Л КАЛИНА АЛЕНА, БАНСКО",
+                tel = ""
+            };
+
+            return srcVoit;
+        }
+
+        private static OldVisa CreateOldVisa()
+        {
+            OldVisa srcOldVisa = new OldVisa();
+            srcOldVisa.oldVisaRows.Add(new OldVisaRow()
+                {
+                    ov_nacbel = "AT",
+                    ov_vidvis = "C",
+                    ov_visnom = "АТ1234567",
+                    ov_dataot = "2005-02-01",
+                    ov_datado = "2006-01-31",
+                    ov_brvl = "M"
+                });
+            srcOldVisa.oldVisaRows.Add(new OldVisaRow()
+            {
+                ov_nacbel = "BY",
+                ov_vidvis = "D",
+                ov_visnom = "BY8907654",
+                ov_dataot = "2011-02-01",
+                ov_datado = "2021-01-31",
+                ov_brvl = "M"
+            });
+            return srcOldVisa;
         }
 
         private static Euroda CreateEuroda()

@@ -72,6 +72,18 @@ namespace VisaXmlMaker.Model
         [XmlElement(ElementName = "d_euroda", IsNullable = false)]
         public Euroda euroda;
 
+        /// <summary>
+        /// information about other (up to 6) visas issued during the past three years
+        /// </summary>
+        [XmlElement(ElementName="d_oldvisa")]
+        public OldVisa oldVisa;
+
+        /// <summary>
+        /// prepaid services for organized tourists (voucher information)
+        /// </summary>
+        [XmlElement(ElementName = "d_voit")]
+        public Voit voit;
+
         public RootLoadOsf()
         {
             msgHeader = new MsgHeader();
@@ -83,6 +95,8 @@ namespace VisaXmlMaker.Model
             molba = new Molba();
             domakin = new Domakin();
             euroda = new Euroda();
-        }
+            oldVisa = new OldVisa();
+            voit = new Voit();
+        }        
     }
 }
