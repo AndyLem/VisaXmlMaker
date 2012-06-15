@@ -184,6 +184,7 @@
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -293,6 +294,7 @@
             this.tabControl1.Controls.Add(this.lcDopPage);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -305,7 +307,7 @@
             this.lcuzPage.Location = new System.Drawing.Point(4, 22);
             this.lcuzPage.Name = "lcuzPage";
             this.lcuzPage.Padding = new System.Windows.Forms.Padding(3);
-            this.lcuzPage.Size = new System.Drawing.Size(710, 411);
+            this.lcuzPage.Size = new System.Drawing.Size(731, 411);
             this.lcuzPage.TabIndex = 0;
             this.lcuzPage.Text = "Паспорт";
             this.lcuzPage.UseVisualStyleBackColor = true;
@@ -319,7 +321,7 @@
             this.lcuzPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcuzPanel.Location = new System.Drawing.Point(3, 3);
             this.lcuzPanel.Name = "lcuzPanel";
-            this.lcuzPanel.Size = new System.Drawing.Size(704, 405);
+            this.lcuzPanel.Size = new System.Drawing.Size(725, 405);
             this.lcuzPanel.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -363,7 +365,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(702, 403);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(723, 403);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label16
@@ -805,7 +807,7 @@
             this.headerPage.Location = new System.Drawing.Point(4, 22);
             this.headerPage.Name = "headerPage";
             this.headerPage.Padding = new System.Windows.Forms.Padding(3);
-            this.headerPage.Size = new System.Drawing.Size(710, 411);
+            this.headerPage.Size = new System.Drawing.Size(731, 411);
             this.headerPage.TabIndex = 2;
             this.headerPage.Text = "Заголовок";
             this.headerPage.UseVisualStyleBackColor = true;
@@ -819,7 +821,7 @@
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerPanel.Location = new System.Drawing.Point(3, 3);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(704, 405);
+            this.headerPanel.Size = new System.Drawing.Size(725, 405);
             this.headerPanel.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -851,7 +853,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(702, 403);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(723, 403);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label2
@@ -1948,6 +1950,16 @@
             this.comboBox23.Size = new System.Drawing.Size(121, 21);
             this.comboBox23.TabIndex = 68;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(731, 411);
+            this.tabPage3.TabIndex = 5;
+            this.tabPage3.Text = "Принимающая сторона";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2160,6 +2172,7 @@
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.ComboBox comboBox19;
         private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.TabPage tabPage3;
 
     }
 }
