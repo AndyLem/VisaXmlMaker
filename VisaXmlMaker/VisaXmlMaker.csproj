@@ -55,6 +55,7 @@
     <Compile Include="Model\Basta.cs" />
     <Compile Include="Model\Domakin.cs" />
     <Compile Include="Model\Euroda.cs" />
+    <Compile Include="Model\ImageConverter.cs" />
     <Compile Include="Model\Images.cs" />
     <Compile Include="Model\LcDop.cs" />
     <Compile Include="Model\Lcuz.cs" />
