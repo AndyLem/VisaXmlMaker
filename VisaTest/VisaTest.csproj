@@ -68,9 +68,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="TestImage.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="TestImage.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
