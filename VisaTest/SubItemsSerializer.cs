@@ -6,6 +6,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VisaXmlMaker.Model;
 using System.IO;
 using System.Xml.Serialization;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace VisaTest
 {
@@ -37,7 +39,7 @@ namespace VisaTest
             RootLoadOsf dstRoot= (RootLoadOsf)ser.Deserialize(fs);
 
             fs.Close();
-            //File.Delete(fileName);
+            File.Delete(fileName);
 
             Assert.AreEqual(srcRoot.msgHeader.msgHeaderRow, dstRoot.msgHeader.msgHeaderRow, 
                 "Прочитанное значение MsgHeader отличается от переданного на запись");
@@ -69,6 +71,28 @@ namespace VisaTest
                 "Прочитанное значение Images отличается от переданного на запись");
         }
 
+        [TestMethod]
+        public void ImageConversionTest()
+        {
+            try
+            {
+                Image im = Properties.Resources.TestImage;
+                RootLoadOsf root = new RootLoadOsf();
+                root.images.imagesRow.im_image =
+                    VisaXmlMaker.Model.ImageConverter.ConvertImageToBase64(im, ImageFormat.Jpeg);
+                string fileName = Path.GetTempFileName();
+                FileStream fs = File.Create(fileName);
+                XmlSerializer ser = new XmlSerializer(typeof(RootLoadOsf));
+                ser.Serialize(fs, root);
+                fs.Close();
+                File.Delete(fileName);
+            }
+            catch
+            {
+                Assert.Fail("Ошибка сохранения тестовой картинки");
+            }
+        }
+
         private static Images CreateImages()
         {
             Images srcImages = new Images();
@@ -78,6 +102,7 @@ namespace VisaTest
                 im_width = "337",
                 im_height = "449",
                 im_imglen = "40112",
+                im_image = ""
             };
 
 
@@ -299,5 +324,7 @@ namespace VisaTest
             };
             return srcMaika;
         }
+
+
     }
 }
