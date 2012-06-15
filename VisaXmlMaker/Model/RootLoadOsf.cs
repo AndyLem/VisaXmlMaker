@@ -84,6 +84,12 @@ namespace VisaXmlMaker.Model
         [XmlElement(ElementName = "d_voit")]
         public Voit voit;
 
+        /// <summary>
+        /// scanned or captured by digital camera facial image of the applicant
+        /// </summary>
+        [XmlElement(ElementName = "d_images")]
+        public Images images;
+
         public RootLoadOsf()
         {
             msgHeader = new MsgHeader();
@@ -97,6 +103,7 @@ namespace VisaXmlMaker.Model
             euroda = new Euroda();
             oldVisa = new OldVisa();
             voit = new Voit();
+            images = new Images();
         }        
     }
 }

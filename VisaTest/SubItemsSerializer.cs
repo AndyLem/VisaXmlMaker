@@ -27,6 +27,7 @@ namespace VisaTest
             srcRoot.euroda = CreateEuroda();
             srcRoot.oldVisa = CreateOldVisa();
             srcRoot.voit = CreateVoit();
+            srcRoot.images = CreateImages();
 
             string fileName = Path.GetTempFileName();
             FileStream fs = File.Create(fileName);
@@ -64,7 +65,23 @@ namespace VisaTest
 
             Assert.AreEqual(srcRoot.voit.voitRow, dstRoot.voit.voitRow,
                 "Прочитанное значение Voit отличается от переданного на запись");
+            Assert.AreEqual(srcRoot.images.imagesRow, dstRoot.images.imagesRow,
+                "Прочитанное значение Images отличается от переданного на запись");
+        }
 
+        private static Images CreateImages()
+        {
+            Images srcImages = new Images();
+            srcImages.imagesRow = new ImagesRow()
+            {
+                im_devicetype = "50",
+                im_width = "337",
+                im_height = "449",
+                im_imglen = "40112",
+            };
+
+
+            return srcImages;
         }
 
         private static Voit CreateVoit()
