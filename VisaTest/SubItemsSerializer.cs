@@ -39,7 +39,7 @@ namespace VisaTest
             RootLoadOsf dstRoot= (RootLoadOsf)ser.Deserialize(fs);
 
             fs.Close();
-            File.Delete(fileName);
+            //File.Delete(fileName);
 
             Assert.AreEqual(srcRoot.msgHeader.msgHeaderRow, dstRoot.msgHeader.msgHeaderRow, 
                 "Прочитанное значение MsgHeader отличается от переданного на запись");
@@ -102,7 +102,7 @@ namespace VisaTest
                 im_width = "337",
                 im_height = "449",
                 im_imglen = "40112",
-                im_image = ""
+                im_image = VisaXmlMaker.Model.ImageConverter.ConvertImageToBase64(Properties.Resources.TestImage, ImageFormat.Jpeg)
             };
 
 
