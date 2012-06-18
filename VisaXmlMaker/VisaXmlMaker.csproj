@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\TabsController.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,7 @@
     <Compile Include="Model\MsgHeader.cs" />
     <Compile Include="Model\NamespaceRemover.cs" />
     <Compile Include="Model\OldVisa.cs" />
+    <Compile Include="Model\PositionAttribute.cs" />
     <Compile Include="Model\RootLoadOsf.cs" />
     <Compile Include="Model\Sapruga.cs" />
     <Compile Include="Model\Voit.cs" />
