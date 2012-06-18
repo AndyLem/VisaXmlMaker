@@ -19,16 +19,16 @@ namespace VisaXmlMaker
         public MainForm()
         {
             InitializeComponent();
-            tabsCtrl.FillGrid(rootObj.msgHeader.msgHeaderRow, msgHeaderTable);
-            tabsCtrl.FillGrid(rootObj.lcuz.lcuzRow, lcuzTable);
+            tabsCtrl.Fill(this, rootObj);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Controller.TabsController ctrl = new Controller.TabsController();
-            ctrl.FillGrid(new VisaXmlMaker.Model.BastaRow(), domakinTable);
-            ctrl.FillGrid(new VisaXmlMaker.Model.MaikaRow(), domakinTable);
-            ctrl.FillGrid(new VisaXmlMaker.Model.SaprugaRow(), domakinTable);
+        }
+
+        private void loadImageBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

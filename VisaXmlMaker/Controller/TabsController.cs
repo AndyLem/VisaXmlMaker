@@ -10,6 +10,31 @@ namespace VisaXmlMaker.Controller
 {
     public class TabsController
     {
+        public void Fill(MainForm form, RootLoadOsf rootObj)
+        {
+            FillGrid(rootObj.msgHeader.msgHeaderRow, form.msgHeaderTable);
+            FillGrid(rootObj.lcuz.lcuzRow, form.lcuzTable);
+            FillGrid(rootObj.lcDop.lcDopRow, form.lcDopTable);
+
+            FillGrid(rootObj.basta.bastaRow, form.familyTable);
+            FillGrid(rootObj.maika.maikaRow, form.familyTable);
+            FillGrid(rootObj.sapruga.saprugaRow, form.familyTable);
+
+            FillGrid(rootObj.molba.molbaRow, form.molbaTable);
+            FillGrid(rootObj.domakin.domakinRow, form.domakinTable);
+            FillGrid(rootObj.euroda.eurodaRow, form.eurodaTable);
+            FillGrid(rootObj.voit.voitRow, form.voitTable);
+
+
+            try
+            {
+                form.pictureBox.Image = ImageConverter.ConvertBase64ToImage(rootObj.images.imagesRow.im_image);
+            }
+            catch
+            {
+            }
+        }
+
         public void FillGrid(object filler, TableLayoutPanel table)
         {
             FieldInfo[] fieldInfos;
@@ -92,46 +117,11 @@ namespace VisaXmlMaker.Controller
 
                 table.Controls.Add(l, currentColumn, currentRow);
                 table.Controls.Add(control, currentColumn + 1, currentRow);
+                table.SetColumnSpan(control, info.PositionAttr.ColSpan);
+                if (info.PositionAttr.ColSpan > 1)
+                    currentRightFilled = true;
             }
-
-            //            string desc = pAttr.Desc;
-
-            //            Control control = CreateAndStyleControl(pAttr);
-            //            Label l = CreateAndStyleLabel(desc);
-
-            //            if (pAttr.PutToRight)
-            //            {
-            //                if (currentRightFilled)
-            //                {
-            //                    currentRow++;
-            //                    currentLeftFilled = false;
-            //                    currentRightFilled = false;
-            //                }
-            //                currentColumn = 2;
-            //                currentRightFilled = true;
-            //            }
-            //            else
-            //            {
-            //                if (currentLeftFilled)
-            //                {
-            //                    currentRow++;
-            //                    currentLeftFilled = false;
-            //                    currentRightFilled = false;
-            //                }
-            //                currentColumn = 0;
-            //                currentLeftFilled = true;
-            //            }
-
-            //            while (currentRow >= table.RowCount)
-            //                table.RowCount++;
-
-            //            table.Controls.Add(l, currentColumn, currentRow);
-            //            table.Controls.Add(control, currentColumn + 1, currentRow);
-
-            //            break;
-            //        }
-            //    }
-            //}
+            
             table.RowCount++;
         }
 

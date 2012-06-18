@@ -32,7 +32,7 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.). If spouse is Bulgarian, Cyrillic is mandatory.
         /// </summary>
-        [Position(GroupName = "Супруг(а)", Desc = "Фамилия")]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Фамилия")]
         public string sp_famil;
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.). If spouse is Bulgarian, Cyrillic is mandatory.
         /// </summary>
-        [Position(GroupName = "Супруг(а)", Desc = "Имена", PutToRight=true)]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Имена")]
         public string sp_imena;
 
         /// <summary>
@@ -52,21 +52,21 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.). If spouse is Bulgarian, Cyrillic is mandatory.
         /// </summary>
-        [Position(GroupName = "Супруг(а)", Desc = "Фамилия при рождении")]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Фамилия при рождении")]
         public string sp_famil2;
 
         /// <summary>
         /// Spouse’s date of birth
         /// Char(10) dd/mm/yyyy. If day or month are unknown, please substitute with 00
         /// </summary>
-        [Position(GroupName = "Супруг(а)", Desc = "Дата рождения", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Дата рождения", ControlType = typeof(DateTimePicker))]
         public string sp_datraj;
 
         /// <summary>
         /// Spouse’s Country of birth
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Супруг(а)", Desc = "Страна рождения", ControlType=typeof(ComboBox))]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Страна рождения", ControlType = typeof(ComboBox))]
         public string sp_mrjdarj;
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia,
         /// Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Супруг(а)", Desc = "Город рождения", ControlType = typeof(ComboBox), PutToRight = true)]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Город рождения", ControlType = typeof(ComboBox))]
         public string sp_mrjnm;
     }
 }

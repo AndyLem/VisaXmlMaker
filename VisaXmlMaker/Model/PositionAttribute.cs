@@ -14,6 +14,7 @@ namespace VisaXmlMaker.Model
         public string Desc { get; set; }
         public bool PutToRight { get; set; }
         public string GroupName { get; set; }
+        public int ColSpan { get; set; }
 
         /// <summary>
         /// TextBox, Combobox, DateTimePicker etc.
@@ -28,6 +29,7 @@ namespace VisaXmlMaker.Model
             Desc = string.Empty;
             PutToRight = false;
             ControlType = typeof(TextBox);
+            ColSpan = 1;
         }
 
         public Control GetControl()

@@ -22,7 +22,7 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Latin capital letters only (A-Z) and spaces between  surnames. 
         /// Cyrillic could be used if father is citizen of country which uses Cyrillic as well.
         /// </summary>
-        [Position(GroupName = "Мать", Desc = "Фамилия")]
+        [Position(GroupName = "Мать", ColSpan = 2, Desc = "Фамилия")]
         public string dc_famil;
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Latin capital letters only (A-Z) and spaces between names. 
         /// Cyrillic could be used if father is citizen of country which uses Cyrillic as well.
         /// </summary>
-        [Position(GroupName = "Мать", Desc = "Имена", PutToRight=true)]
+        [Position(GroupName = "Мать", ColSpan = 2, Desc = "Имена")]
         public string dc_imena;
     }
 }

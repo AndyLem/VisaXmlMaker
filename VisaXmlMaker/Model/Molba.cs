@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
+using System.Windows.Forms;
 
 namespace VisaXmlMaker.Model
 {
@@ -21,12 +22,14 @@ namespace VisaXmlMaker.Model
         /// Intended date of arrival
         /// yyyy-mm-dd
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Дата прибытия", ControlType = typeof(DateTimePicker))]
         public string dat_vli;
 
         /// <summary>
         /// Intended date of departure
         /// yyyy-mm-dd
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Дата выбытия", ControlType = typeof(DateTimePicker))]
         public string dat_izl;
 
         /// <summary>
@@ -36,6 +39,7 @@ namespace VisaXmlMaker.Model
         /// C = Short stay
         /// D = Long stay
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Тип визы", ControlType = typeof(ComboBox))]
         public string vidvis;
 
         /// <summary>
@@ -44,6 +48,7 @@ namespace VisaXmlMaker.Model
         /// 2 = double entries
         /// M = multiple entries
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Количество въездов", ControlType = typeof(ComboBox))]
         public string brvl;
 
         /// <summary>
@@ -56,6 +61,7 @@ namespace VisaXmlMaker.Model
         /// I = up to 4 years (valid for multiple entry C visas only)
         /// J = up to 5 years (valid for multiple entry C visas only)
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Период действия мультивизы", ControlType = typeof(ComboBox))]
         public string valvis;
 
         /// <summary>
@@ -65,6 +71,7 @@ namespace VisaXmlMaker.Model
         /// O = ordinary
         /// B = fast processing
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Ускоренная обработка запроса", ControlType = typeof(CheckBox))]
         public string vidus;
 
         /// <summary>
@@ -74,12 +81,14 @@ namespace VisaXmlMaker.Model
         /// For short entry visas =  1 to 90 days
         /// For long stay visas =  180 or 360 days
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Длительность пребывания", ControlType = typeof(ComboBox))]
         public string brdni;
 
         /// <summary>
         /// Purpose of travel
         /// Three letter code. See Code table 6
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Цель поездки", ControlType = typeof(ComboBox))]
         public string cel;
 
         /// <summary>
@@ -87,12 +96,14 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Cyrillic letters, commas, dots  and spaces.
         /// Currently is used free description in BULGARIAN language 
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Другая цель", ControlType = typeof(TextBox))]
         public string celdruga;
 
         /// <summary>
         /// Date and time of lodging of the application in Visa application centre
         /// yyyy-mm-ddThh:mm:ss.ccccc
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Дата и время подачи заявления", ControlType = typeof(DateTimePicker))]
         public string mol_dat_vav;
 
         /// <summary>
@@ -100,6 +111,7 @@ namespace VisaXmlMaker.Model
         /// (diplomats, cultural events etc.) [Yes/No]
         /// Char(1)  Y = yes N = No
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Без пошлины", ControlType = typeof(CheckBox))]
         public string gratis;
 
         /// <summary>
@@ -107,24 +119,28 @@ namespace VisaXmlMaker.Model
         /// for the final country of destination [Yes/No]
         ///  Char(1)  Y = yes N = No Mandatory for Airport transit (A) and Transit (B) visas
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Разрешение на въезд из транзита", ControlType = typeof(CheckBox))]
         public string imavisa;
 
         /// <summary>
         /// Amount of collected application fee
         /// Decimal number  12.2
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Размер пошлины", ControlType = typeof(ComboBox))]
         public string cenamol;
 
         /// <summary>
         /// Currency in which the fee was collected
         /// Char(3) Three letter currency code. Capital latin letters.
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Валюта пошлины", ControlType = typeof(ComboBox))]
         public string cenacurr;
 
         /// <summary>
         /// Main destination - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Страна назначения", ControlType = typeof(ComboBox))]
         public string maindest;
 
         /// <summary>
@@ -134,12 +150,14 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.).
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Город назначения", ControlType = typeof(ComboBox))]
         public string maindestnm;
 
         /// <summary>
         /// Border of first entry - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Первая пересекаемая граница", ControlType = typeof(ComboBox))]
         public string gkpp_darj;
 
         /// <summary>
@@ -147,6 +165,7 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Cyrillic letters, dots  and spaces.
         /// Currently is used free description in BULGARIAN language
         /// </summary>
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Точка пересечения границы", ControlType = typeof(ComboBox))]
         public string gkpp_text;
 
         /// <summary>
@@ -154,6 +173,7 @@ namespace VisaXmlMaker.Model
         /// Varchar(150) Cyrillic letters, commas, dots  and spaces.
         /// Currently is used free description in BULGARIAN language Mandatory for Transit (B) visas
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Путь транзита", ColSpan = 3, ControlType = typeof(TextBox))]
         public string marsrut;
 
         /// <summary>
@@ -161,6 +181,7 @@ namespace VisaXmlMaker.Model
         /// Varchar(500) Cyrillic letters, commas, dots  and spaces.
         /// Currently is used free description in BULGARIAN language
         /// </summary>
+        [Position(GroupName = "Запрос на визу", Desc = "Дополнительная информация", ColSpan=3, ControlType = typeof(TextBox))]
         public string Text_ini;
     }
 }
