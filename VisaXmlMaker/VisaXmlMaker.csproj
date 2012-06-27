@@ -60,6 +60,8 @@
     <Compile Include="Model\Images.cs" />
     <Compile Include="Model\LcDop.cs" />
     <Compile Include="Model\Lcuz.cs" />
+    <Compile Include="Model\Listers\Lister.cs" />
+    <Compile Include="Model\Listers\ListersHolder.cs" />
     <Compile Include="Model\Maika.cs" />
     <Compile Include="Model\ModelIO.cs" />
     <Compile Include="Model\Molba.cs" />

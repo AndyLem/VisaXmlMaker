@@ -15,6 +15,8 @@ namespace VisaXmlMaker.Model
         public bool PutToRight { get; set; }
         public string GroupName { get; set; }
         public int ColSpan { get; set; }
+        public string ListerName { get; set; }
+        public bool OnlyFromList { get; set; }
         public ConverterType ConverterType
         {
             get
@@ -92,6 +94,8 @@ namespace VisaXmlMaker.Model
             _convType = Model.ConverterType.String;
             _checkBoxValues = "Y|N";
             CreateConverter();
+            ListerName = string.Empty;
+            OnlyFromList = false;
         }
 
         public Control GetControl()
