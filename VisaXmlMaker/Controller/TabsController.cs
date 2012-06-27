@@ -86,7 +86,7 @@ namespace VisaXmlMaker.Controller
                     }
                 }
 
-                Control control = CreateAndStyleControl(info.PositionAttr);
+                Control control = CreateAndStyleControl(info);
                 Label l = CreateAndStyleLabel(info.PositionAttr.Desc);
 
                 if (info.PositionAttr.PutToRight)
@@ -148,12 +148,55 @@ namespace VisaXmlMaker.Controller
             return l;
         }
 
-        private static Control CreateAndStyleControl(PositionAttribute pAttr)
+        private static Control CreateAndStyleControl(FillInfo info)
         {
-            Control c = pAttr.GetControl();
+            Control c = info.PositionAttr.GetControl();
+            UpdateControlValue(info, c);
             c.Padding = new Padding(5);
             c.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
+            c.Tag = info;
+            c.TextChanged += new EventHandler(ControlTextChanged);
             return c;
+        }
+
+        static void ControlTextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void UpdateControlValue(FillInfo info, Control c)
+        {
+            /// Getting the value of the field. All fields are strings but they can be null or empty so we need
+            /// to check this state
+            object value = info.Field.GetValue(info.Client);
+            if (value != null)
+            {
+                /// if the value of the field is not null we must convert it to the form needed to the Control using IValueConverter
+                IValueConverter conv = info.PositionAttr.Converter;
+
+                /// value of the field in form for the Control
+                object val = null;
+                if (conv != null)
+                    val = conv.ConvertFromString(value.ToString());
+                if (val != null)
+                {
+                    try
+                    {
+                        if (c is TextBox)
+                            c.Text = (string)val;
+                        else if (c is ComboBox)
+                            c.Text = (string)val;
+                        else if (c is DateTimePicker)
+                            (c as DateTimePicker).Value = (DateTime)val;
+                        else if (c is CheckBox)
+                            (c as CheckBox).Checked = (bool)val;
+                    }
+                    catch
+                    {
+                        throw new Exception("IValueConverter returned incorrect object " + info.Field.Name);
+                    }
+                }
+            }
         }
     }
 

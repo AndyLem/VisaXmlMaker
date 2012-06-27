@@ -30,14 +30,16 @@ namespace VisaXmlMaker.Model
         /// Voucher is valid from
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Ваучер действителен с", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Ваучер действителен с", 
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYmMmD)]
         public string voit_datot;
 
         /// <summary>
         /// Voucher is valid to
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Ваучер действителен по", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Ваучер действителен по",
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYmMmD)]
         public string voit_datdo;
 
         /// <summary>

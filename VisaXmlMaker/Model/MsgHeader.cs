@@ -50,7 +50,8 @@ namespace VisaXmlMaker.Model
         /// Date of creation of XML file
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Заголовок", ColSpan = 1, Desc = "Дата формирования", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Заголовок", ColSpan = 1, Desc = "Дата формирования", 
+            ControlType = typeof(DateTimePicker), ConverterType=ConverterType.ShortYmMmD)]
         public string mh_datvav;
     }
 }

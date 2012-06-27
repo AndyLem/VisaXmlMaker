@@ -22,8 +22,9 @@ namespace VisaXmlMaker.Model
         /// Поле для добавления чекбокса на форму через Controller
         /// </summary>
         [XmlIgnore()]
-        [Position(GroupName = "Супруг(а)", Desc = "Холост/Не замужем", DesiredIndex=-1, ControlType=typeof(CheckBox))]
-        public bool isSingle;
+        [Position(GroupName = "Супруг(а)", Desc = "Холост/Не замужем", DesiredIndex = -1, ControlType = typeof(CheckBox),
+            ConverterType = ConverterType.Bool)]
+        public string isSingle;
 
         /// <summary>
         /// Spouse’s Surname/s (family name/s)
@@ -59,7 +60,8 @@ namespace VisaXmlMaker.Model
         /// Spouse’s date of birth
         /// Char(10) dd/mm/yyyy. If day or month are unknown, please substitute with 00
         /// </summary>
-        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Дата рождения", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Дата рождения",
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortDsMsY)]
         public string sp_datraj;
 
         /// <summary>

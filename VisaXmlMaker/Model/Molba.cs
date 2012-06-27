@@ -22,14 +22,16 @@ namespace VisaXmlMaker.Model
         /// Intended date of arrival
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Дата прибытия", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Запрос на визу", Desc = "Дата прибытия",
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYmMmD)]
         public string dat_vli;
 
         /// <summary>
         /// Intended date of departure
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Дата выбытия", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Запрос на визу", Desc = "Дата выбытия",
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYmMmD)]
         public string dat_izl;
 
         /// <summary>
@@ -71,7 +73,8 @@ namespace VisaXmlMaker.Model
         /// O = ordinary
         /// B = fast processing
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Ускоренная обработка запроса", ControlType = typeof(CheckBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Ускоренная обработка запроса", 
+            ControlType = typeof(CheckBox), ConverterType=ConverterType.Bool, CheckBoxValues="B|O")]
         public string vidus;
 
         /// <summary>
@@ -103,7 +106,8 @@ namespace VisaXmlMaker.Model
         /// Date and time of lodging of the application in Visa application centre
         /// yyyy-mm-ddThh:mm:ss.ccccc
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Дата и время подачи заявления", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Запрос на визу", Desc = "Дата и время подачи заявления", 
+            ControlType = typeof(DateTimePicker) , ConverterType = ConverterType.Long)]
         public string mol_dat_vav;
 
         /// <summary>
@@ -111,7 +115,8 @@ namespace VisaXmlMaker.Model
         /// (diplomats, cultural events etc.) [Yes/No]
         /// Char(1)  Y = yes N = No
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Без пошлины", ControlType = typeof(CheckBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Без пошлины", ControlType = typeof(CheckBox), 
+            ConverterType=ConverterType.Bool)]
         public string gratis;
 
         /// <summary>
@@ -119,7 +124,9 @@ namespace VisaXmlMaker.Model
         /// for the final country of destination [Yes/No]
         ///  Char(1)  Y = yes N = No Mandatory for Airport transit (A) and Transit (B) visas
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Разрешение на въезд из транзита", ControlType = typeof(CheckBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Разрешение на въезд из транзита", 
+            ControlType = typeof(CheckBox), 
+            ConverterType=ConverterType.Bool)]
         public string imavisa;
 
         /// <summary>

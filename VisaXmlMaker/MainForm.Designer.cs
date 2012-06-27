@@ -140,7 +140,7 @@
             this.headerPage.Location = new System.Drawing.Point(4, 22);
             this.headerPage.Name = "headerPage";
             this.headerPage.Padding = new System.Windows.Forms.Padding(3);
-            this.headerPage.Size = new System.Drawing.Size(731, 411);
+            this.headerPage.Size = new System.Drawing.Size(731, 463);
             this.headerPage.TabIndex = 2;
             this.headerPage.Text = "Заголовок";
             this.headerPage.UseVisualStyleBackColor = true;
@@ -154,7 +154,7 @@
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerPanel.Location = new System.Drawing.Point(3, 3);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(725, 405);
+            this.headerPanel.Size = new System.Drawing.Size(725, 457);
             this.headerPanel.TabIndex = 1;
             // 
             // msgHeaderTable
@@ -165,14 +165,13 @@
             this.msgHeaderTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.msgHeaderTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.msgHeaderTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.msgHeaderTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.msgHeaderTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.msgHeaderTable.Location = new System.Drawing.Point(0, 0);
             this.msgHeaderTable.Margin = new System.Windows.Forms.Padding(0);
             this.msgHeaderTable.Name = "msgHeaderTable";
             this.msgHeaderTable.RowCount = 1;
             this.msgHeaderTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.msgHeaderTable.Size = new System.Drawing.Size(723, 403);
+            this.msgHeaderTable.Size = new System.Drawing.Size(723, 455);
             this.msgHeaderTable.TabIndex = 0;
             // 
             // lcuzPage
@@ -181,7 +180,7 @@
             this.lcuzPage.Location = new System.Drawing.Point(4, 22);
             this.lcuzPage.Name = "lcuzPage";
             this.lcuzPage.Padding = new System.Windows.Forms.Padding(3);
-            this.lcuzPage.Size = new System.Drawing.Size(731, 411);
+            this.lcuzPage.Size = new System.Drawing.Size(731, 463);
             this.lcuzPage.TabIndex = 0;
             this.lcuzPage.Text = "Паспорт";
             this.lcuzPage.UseVisualStyleBackColor = true;
@@ -195,7 +194,7 @@
             this.lcuzPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcuzPanel.Location = new System.Drawing.Point(3, 3);
             this.lcuzPanel.Name = "lcuzPanel";
-            this.lcuzPanel.Size = new System.Drawing.Size(725, 405);
+            this.lcuzPanel.Size = new System.Drawing.Size(725, 457);
             this.lcuzPanel.TabIndex = 2;
             // 
             // lcuzTable
@@ -214,7 +213,7 @@
             this.lcuzTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.lcuzTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.lcuzTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.lcuzTable.Size = new System.Drawing.Size(723, 403);
+            this.lcuzTable.Size = new System.Drawing.Size(723, 455);
             this.lcuzTable.TabIndex = 1;
             // 
             // lcDopPage
@@ -224,7 +223,7 @@
             this.lcDopPage.Location = new System.Drawing.Point(4, 22);
             this.lcDopPage.Name = "lcDopPage";
             this.lcDopPage.Padding = new System.Windows.Forms.Padding(3);
-            this.lcDopPage.Size = new System.Drawing.Size(731, 411);
+            this.lcDopPage.Size = new System.Drawing.Size(731, 463);
             this.lcDopPage.TabIndex = 1;
             this.lcDopPage.Text = "Доп. инфо";
             this.lcDopPage.UseVisualStyleBackColor = true;
@@ -238,7 +237,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(725, 405);
+            this.panel4.Size = new System.Drawing.Size(725, 457);
             this.panel4.TabIndex = 3;
             // 
             // lcDopTable
@@ -256,7 +255,7 @@
             this.lcDopTable.RowCount = 2;
             this.lcDopTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.lcDopTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.lcDopTable.Size = new System.Drawing.Size(723, 403);
+            this.lcDopTable.Size = new System.Drawing.Size(723, 455);
             this.lcDopTable.TabIndex = 2;
             // 
             // tabPage1
@@ -265,7 +264,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(731, 411);
+            this.tabPage1.Size = new System.Drawing.Size(731, 463);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Семья";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -279,7 +278,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(725, 405);
+            this.panel2.Size = new System.Drawing.Size(725, 457);
             this.panel2.TabIndex = 3;
             // 
             // familyTable
@@ -297,7 +296,7 @@
             this.familyTable.RowCount = 2;
             this.familyTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.familyTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.familyTable.Size = new System.Drawing.Size(723, 403);
+            this.familyTable.Size = new System.Drawing.Size(723, 455);
             this.familyTable.TabIndex = 1;
             // 
             // tabPage2
@@ -306,7 +305,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(731, 440);
+            this.tabPage2.Size = new System.Drawing.Size(731, 463);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Запрос";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -320,7 +319,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(725, 434);
+            this.panel3.Size = new System.Drawing.Size(725, 457);
             this.panel3.TabIndex = 4;
             // 
             // molbaTable
@@ -338,7 +337,7 @@
             this.molbaTable.RowCount = 2;
             this.molbaTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.molbaTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.molbaTable.Size = new System.Drawing.Size(723, 432);
+            this.molbaTable.Size = new System.Drawing.Size(723, 455);
             this.molbaTable.TabIndex = 2;
             // 
             // tabPage3
@@ -348,7 +347,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(731, 440);
+            this.tabPage3.Size = new System.Drawing.Size(731, 463);
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "Принимающая сторона";
             // 
@@ -367,7 +366,7 @@
             this.domakinTable.RowCount = 2;
             this.domakinTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.domakinTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.domakinTable.Size = new System.Drawing.Size(725, 434);
+            this.domakinTable.Size = new System.Drawing.Size(725, 457);
             this.domakinTable.TabIndex = 3;
             // 
             // toolStrip1
@@ -425,7 +424,7 @@
             this.eurodaPage.Location = new System.Drawing.Point(4, 22);
             this.eurodaPage.Name = "eurodaPage";
             this.eurodaPage.Padding = new System.Windows.Forms.Padding(3);
-            this.eurodaPage.Size = new System.Drawing.Size(731, 440);
+            this.eurodaPage.Size = new System.Drawing.Size(731, 463);
             this.eurodaPage.TabIndex = 6;
             this.eurodaPage.Text = "Родственники в EU";
             this.eurodaPage.UseVisualStyleBackColor = true;
@@ -446,7 +445,7 @@
             this.eurodaTable.RowCount = 2;
             this.eurodaTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eurodaTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.eurodaTable.Size = new System.Drawing.Size(725, 434);
+            this.eurodaTable.Size = new System.Drawing.Size(725, 457);
             this.eurodaTable.TabIndex = 4;
             // 
             // voitPage
@@ -455,7 +454,7 @@
             this.voitPage.Location = new System.Drawing.Point(4, 22);
             this.voitPage.Name = "voitPage";
             this.voitPage.Padding = new System.Windows.Forms.Padding(3);
-            this.voitPage.Size = new System.Drawing.Size(731, 440);
+            this.voitPage.Size = new System.Drawing.Size(731, 463);
             this.voitPage.TabIndex = 7;
             this.voitPage.Text = "Туризм";
             this.voitPage.UseVisualStyleBackColor = true;
@@ -476,7 +475,7 @@
             this.voitTable.RowCount = 2;
             this.voitTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.voitTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.voitTable.Size = new System.Drawing.Size(725, 434);
+            this.voitTable.Size = new System.Drawing.Size(725, 457);
             this.voitTable.TabIndex = 5;
             // 
             // oldVisaPage
@@ -484,7 +483,7 @@
             this.oldVisaPage.Location = new System.Drawing.Point(4, 22);
             this.oldVisaPage.Name = "oldVisaPage";
             this.oldVisaPage.Padding = new System.Windows.Forms.Padding(3);
-            this.oldVisaPage.Size = new System.Drawing.Size(731, 440);
+            this.oldVisaPage.Size = new System.Drawing.Size(731, 463);
             this.oldVisaPage.TabIndex = 8;
             this.oldVisaPage.Text = "Прошлые визы";
             this.oldVisaPage.UseVisualStyleBackColor = true;

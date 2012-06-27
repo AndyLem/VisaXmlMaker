@@ -44,14 +44,16 @@ namespace VisaXmlMaker.Model
         /// Passport date of expiry
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Срок действия паспорта", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Срок действия паспорта", 
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYmMmD)]
         public string pasp_val;
 
         /// <summary>
         /// Date of issuance of the passport
         /// yyyy-mm-dd
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Дата выдачи паспорта", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Дата выдачи паспорта",
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYmMmD)]
         public string dat_izd;
 
         /// <summary>
@@ -79,7 +81,8 @@ namespace VisaXmlMaker.Model
         /// Date of birth
         /// Char(10)  yyyy/mm/dd IF day or month of the date of birth are unknown, substitute with 00
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Дата рождения", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Дата рождения",
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortYsMsD)]
         public string dat_raj;
 
         /// <summary>

@@ -61,6 +61,7 @@
     <Compile Include="Model\LcDop.cs" />
     <Compile Include="Model\Lcuz.cs" />
     <Compile Include="Model\Maika.cs" />
+    <Compile Include="Model\ModelIO.cs" />
     <Compile Include="Model\Molba.cs" />
     <Compile Include="Model\MsgHeader.cs" />
     <Compile Include="Model\NamespaceRemover.cs" />

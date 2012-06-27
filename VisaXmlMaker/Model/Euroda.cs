@@ -38,7 +38,8 @@ namespace VisaXmlMaker.Model
         /// Date of birth of the EU/EAA citizen
         /// dd/mm/yyyy
         /// </summary>
-        [Position(GroupName = "Родственник в EU/EAA", ColSpan = 2, Desc = "Дата рождения", ControlType = typeof(DateTimePicker))]
+        [Position(GroupName = "Родственник в EU/EAA", ColSpan = 2, Desc = "Дата рождения", 
+            ControlType = typeof(DateTimePicker), ConverterType = ConverterType.ShortDsMsY)]
         public string eu_datraj;
 
         /// <summary>

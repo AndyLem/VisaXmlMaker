@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
+using VisaXmlMaker.Model;
 
 namespace VisaXmlMaker
 {
@@ -19,7 +20,9 @@ namespace VisaXmlMaker
         public MainForm()
         {
             InitializeComponent();
-            tabsCtrl.Fill(this, rootObj);
+            rootObj = ModelIO.Load("data.xml");
+            if (rootObj != null)
+                tabsCtrl.Fill(this, rootObj);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
