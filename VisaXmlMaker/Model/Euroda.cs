@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public EurodaRow eurodaRow;
     }
 
-    public struct EurodaRow
+    public class EurodaRow
     {
         /// <summary>
         /// Surname/s (family name/s) of the EU/EAA citizen

@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public MsgHeaderRow msgHeaderRow;
     }
 
-    public struct MsgHeaderRow
+    public class MsgHeaderRow
     {
         /// <summary>
         /// Visa application centre location code. Char(3) Latin capital letters code

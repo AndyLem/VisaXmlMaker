@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public LcDopRow lcDopRow;
     }
 
-    public struct LcDopRow
+    public class LcDopRow
     {
         /// <summary>
         /// Country of birth

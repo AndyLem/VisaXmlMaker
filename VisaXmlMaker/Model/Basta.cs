@@ -15,7 +15,7 @@ namespace VisaXmlMaker.Model
         public BastaRow bastaRow;
     }
 
-    public struct BastaRow
+    public class BastaRow
     {
         /// <summary>
         /// Surname/s (family name/s)

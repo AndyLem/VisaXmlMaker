@@ -17,7 +17,7 @@ namespace VisaXmlMaker.Model
 
     }
 
-    public struct LcuzRow
+    public class LcuzRow
     {
         /// <summary>
         /// Type of passport

@@ -20,7 +20,7 @@ namespace VisaXmlMaker.Model
         }
     }
 
-    public struct OldVisaRow
+    public class OldVisaRow
     {
         /// <summary>
         /// Issuing country

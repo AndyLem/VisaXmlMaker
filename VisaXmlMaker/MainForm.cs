@@ -33,5 +33,10 @@ namespace VisaXmlMaker
         {
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            ModelIO.Save(rootObj, "test.xml");
+        }
     }
 }

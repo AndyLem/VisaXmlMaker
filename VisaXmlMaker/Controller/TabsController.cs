@@ -161,7 +161,28 @@ namespace VisaXmlMaker.Controller
 
         static void ControlTextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Control c = (Control)sender;
+            FillInfo info = (FillInfo)c.Tag;
+
+            UpdateFieldValue(info, c);
+        }
+
+        private static void UpdateFieldValue(FillInfo info, Control c)
+        {
+            if ((c is TextBox) || (c is ComboBox))
+            {
+                info.Field.SetValue(info.Client, c.Text);
+            }
+            else if (c is DateTimePicker)
+            {
+                DateTime dt = ((DateTimePicker)c).Value;
+                IValueConverter conv = info.PositionAttr.Converter;
+                if (conv != null)
+                {
+                    string val = conv.ConvertToString(dt);
+                    info.Field.SetValue(info.Client, val);
+                }
+            }
         }
 
         private static void UpdateControlValue(FillInfo info, Control c)
@@ -198,6 +219,8 @@ namespace VisaXmlMaker.Controller
                 }
             }
         }
+
+
     }
 
     public class FillInfo

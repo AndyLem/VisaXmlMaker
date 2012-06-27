@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public DomakinRow domakinRow;
     }
 
-    public struct DomakinRow
+    public class DomakinRow
     {
         /// <summary>
         /// Type of the host in EU (person, company/organization or hotel)

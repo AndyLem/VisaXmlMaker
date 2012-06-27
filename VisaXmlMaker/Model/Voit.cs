@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public VoitRow voitRow;
     }
 
-    public struct VoitRow
+    public class VoitRow
     {
         /// <summary>
         /// Number of voucher for prepaid tourist services

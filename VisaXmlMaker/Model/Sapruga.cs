@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public SaprugaRow saprugaRow;
     }
 
-    public struct SaprugaRow
+    public class SaprugaRow
     {
         /// <summary>
         /// Поле для добавления чекбокса на форму через Controller

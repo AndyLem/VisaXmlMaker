@@ -15,7 +15,7 @@ namespace VisaXmlMaker.Model
         public MaikaRow maikaRow;
     }
 
-    public struct MaikaRow
+    public class MaikaRow
     {
         /// <summary>
         /// Surname/s (family name/s)

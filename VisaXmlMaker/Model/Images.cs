@@ -15,7 +15,7 @@ namespace VisaXmlMaker.Model
         public ImagesRow imagesRow;
     }
 
-    public struct ImagesRow
+    public class ImagesRow
     {
         /// <summary>
         /// Information about used imaging device

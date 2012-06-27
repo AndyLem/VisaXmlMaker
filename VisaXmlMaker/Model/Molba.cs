@@ -16,7 +16,7 @@ namespace VisaXmlMaker.Model
         public MolbaRow molbaRow;
     }
 
-    public struct MolbaRow
+    public class MolbaRow
     {
         /// <summary>
         /// Intended date of arrival
