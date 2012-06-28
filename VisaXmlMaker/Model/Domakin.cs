@@ -25,7 +25,8 @@ namespace VisaXmlMaker.Model
         /// F = Hosting company or organization 
         /// H = Hotel or temporary address
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Тип принимающей стороны", ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Тип принимающей стороны", 
+            ControlType = typeof(ComboBox), ListerName="host_type", OnlyFromList=true)]
         public string dm_vid;
 
         /// <summary>
@@ -34,14 +35,16 @@ namespace VisaXmlMaker.Model
         /// Varchar(40) Cyrillic capital letters (А-Я), 
         /// numbers, dots (.), dashes (-), slashes (/)  and spaces . 
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Рег. номер", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Рег. номер", PutToRight = true, 
+            ControlType = typeof(ComboBox), ListerName = "host_regnum")]
         public string nom_pok;
 
         /// <summary>
         /// Hosting person – citizenship OR Contact person from Hosting company - Citizenship
         /// Char(2) ISO 3166 two letter code. See Code Table 3
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Страна регистрации", ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Страна регистрации",
+            ControlType = typeof(ComboBox), ListerName = "countries", OnlyFromList = true)]
         public string dom_graj;
 
         /// <summary>
@@ -49,7 +52,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Latin OR Cyrillic capital letters (A-Z or  А-Я) and spaces. 
         /// Cyrillic alphabet should be used if Hosting person is Bulgarian.
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Фамилия контактного лица", ControlType = typeof(TextBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Фамилия контактного лица", ControlType = typeof(TextBox),
+            ListerName = "host_person_name")]
         public string dom_famil;
 
         /// <summary>
@@ -57,28 +61,32 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Latin OR Cyrillic capital letters (A-Z or  А-Я) and spaces.
         /// Cyrillic alphabet should be used if Hosting person is Bulgarian.
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Имя контактоного лица", PutToRight = true, ControlType = typeof(TextBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "Имя контактоного лица", PutToRight = true, 
+            ControlType = typeof(TextBox))]
         public string dom_ime;
 
         /// <summary>
         /// Hosting person – National Identification number (for BG citizens - EGN)
         /// Varchar(10) 10 digits number   0-9
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "ИД контактного лица", ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "ИД контактного лица", ControlType = typeof(ComboBox),
+            ListerName = "host_person_id")]
         public string dom_egn;
 
         /// <summary>
         /// Hosting company/organization identification number (For BG companies only – BULSTAT number)
         /// Varchar(13) Cyrillic capital letters (А-Я) and numbers
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "ИД принимающей организации", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Принимающая сторона", Desc = "ИД принимающей организации", PutToRight = true, 
+            ControlType = typeof(ComboBox), ListerName = "host_id")]
         public string ved_ekpou;
 
         /// <summary>
         /// Hosting person address - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Принимающая сторона (адрес)", Desc = "Страна", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Принимающая сторона (адрес)", Desc = "Страна", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string dom_darj;
 
         /// <summary>
@@ -87,7 +95,8 @@ namespace VisaXmlMaker.Model
         /// numbers, dots (.), dashes (-) and spaces. Cyrillic alphabet should be used if 
         /// Hosting person Country is Bulgaria.
         /// </summary>
-        [Position(GroupName = "Принимающая сторона (адрес)", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Принимающая сторона (адрес)", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox),
+            ListerName = "cities")]
         public string dom_nm;
 
         /// <summary>
@@ -133,14 +142,16 @@ namespace VisaXmlMaker.Model
         /// dots (.), dashes (-) and spaces . Cyrillic alphabet should be used if 
         /// Hosting company/organization is Bulgarian or registered in Bulgaria.
         /// </summary>
-        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Название", ColSpan = 3, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Название", ColSpan = 3, ControlType = typeof(ComboBox),
+            ListerName = "hotels")]
         public string ved_ime;
 
         /// <summary>
         /// Hosting company/organization address – Country OR Hotel address - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Страна", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Страна", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string ved_darj;
 
         /// <summary>
@@ -148,7 +159,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(50) Latin OR Cyrillic capital letters (A-Z or  А-Я) and spaces.
         /// Cyrillic alphabet should be used if Hosting company/organization Country is Bulgaria.
         /// </summary>
-        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox), 
+            ListerName="cities")]
         public string ved_nm;
 
         /// <summary>
@@ -165,7 +177,8 @@ namespace VisaXmlMaker.Model
         /// dashes (-), slashes (/) and spaces . Cyrillic alphabet should be used if 
         /// Hosting company/ organization Country is Bulgaria.
         /// </summary>
-        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Улица, дом и т.п.", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Принимающая Компания/Отель", Desc = "Улица, дом и т.п.", PutToRight = true, 
+            ControlType = typeof(TextBox))]
         public string ved_adres;
 
         /// <summary>
@@ -190,3 +203,4 @@ namespace VisaXmlMaker.Model
         public string ved_email;
     }
 }
+

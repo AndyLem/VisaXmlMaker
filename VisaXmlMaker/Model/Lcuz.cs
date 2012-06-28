@@ -23,14 +23,16 @@ namespace VisaXmlMaker.Model
         /// Type of passport
         /// Char(1)  one letter code.  See Code Table 1
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Тип паспорта", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Тип паспорта", 
+            ControlType = typeof(ComboBox), ListerName="docTypes", OnlyFromList=true)]
         public string vid_zp;
 
         /// <summary>
         /// Issuing country
         /// Char(2) ISO 3166 two letter Country code.  See Code Table 2
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 2, Desc = "Страна, выдавшая паспорт", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 2, Desc = "Страна, выдавшая паспорт",
+            ControlType = typeof(ComboBox), ListerName = "countries", OnlyFromList = true)]
         public string nac_bel;
 
         /// <summary>
@@ -60,7 +62,8 @@ namespace VisaXmlMaker.Model
         /// Citizenship of the applicant
         /// Char(2) ISO 3166 two letter code. See Code Table 3
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Гражданство", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Гражданство",
+            ControlType = typeof(ComboBox), ListerName = "countries", OnlyFromList = true)]
         public string graj;
 
         /// <summary>
@@ -89,7 +92,8 @@ namespace VisaXmlMaker.Model
         /// Sex
         /// Char(1)  M = male F = female
         /// </summary>
-        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Пол", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Информация о паспорте", ColSpan = 1, Desc = "Пол", ControlType = typeof(ComboBox),
+            ListerName="sex", OnlyFromList=true)]
         public string pol;
 
 

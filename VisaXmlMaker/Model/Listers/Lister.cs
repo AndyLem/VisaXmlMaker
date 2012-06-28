@@ -8,24 +8,26 @@ namespace VisaXmlMaker.Model.Listers
 {
     public class Lister
     {
-        public List<string> _data;
+        public List<ListerData> _data;
 
         public event EventHandler ListChanged;
 
         public Lister()
         {
-            _data = new List<string>();
+            _data = new List<ListerData>();
         }
 
-        public void AddLine(string line)
+        public void AddLine(string item, string desc)
         {
-            if (_data.Contains(line)) return;
-            _data.Add(line);
+            ListerData ld = new ListerData() { Item = item, Description = desc };
+
+            if (_data.Exists((it) => { return it.Item == ld.Item; })) return;
+            _data.Add(ld);
             if (ListChanged != null)
                 ListChanged(this, EventArgs.Empty);
         }
 
-        public IEnumerable<string> Enum
+        public IEnumerable<ListerData> Enum
         {
             get
             {
@@ -33,11 +35,12 @@ namespace VisaXmlMaker.Model.Listers
             }
         }
 
-        public void Remove(string line)
+        public void Remove(string item)
         {
-            if (_data.Contains(line))
+            ListerData fndLd = _data.Find((it) => { return it.Item == item; });
+            if (fndLd != null) 
             {
-                _data.Remove(line);
+                _data.Remove(fndLd);
                 if (ListChanged != null)
                     ListChanged(this, EventArgs.Empty);
             }

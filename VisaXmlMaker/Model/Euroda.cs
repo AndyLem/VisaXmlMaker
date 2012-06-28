@@ -46,7 +46,8 @@ namespace VisaXmlMaker.Model
         /// Citizenship of the EU/EAA citizen
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Родственник в EU/EAA", ColSpan = 2, Desc = "Гражданство", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Родственник в EU/EAA", ColSpan = 2, Desc = "Гражданство", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string eu_nac_bel;
 
         /// <summary>
@@ -60,7 +61,11 @@ namespace VisaXmlMaker.Model
         /// Family relationship of the EU/EEA citizen to the visa applicant
         /// Char(1) code. See Code table 7
         /// </summary>
-        [Position(GroupName = "Родственник в EU/EAA", ColSpan = 2, Desc = "Родство", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Родственник в EU/EAA", ColSpan = 2, Desc = "Родство", ControlType = typeof(ComboBox),
+            ListerName="relation", OnlyFromList = true)]
         public string eu_rodstvo;
     }
 }
+
+
+

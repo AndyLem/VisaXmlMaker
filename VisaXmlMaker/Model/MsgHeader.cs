@@ -21,7 +21,8 @@ namespace VisaXmlMaker.Model
         /// <summary>
         /// Visa application centre location code. Char(3) Latin capital letters code
         /// </summary>
-        [Position(GroupName = "Заголовок", ColSpan = 2, Desc = "Код визового центра", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Заголовок", ColSpan = 2, Desc = "Код визового центра", ControlType = typeof(ComboBox),
+            ListerName="visa_centers")]
         public string mh_kscreated;
 
         /// <summary>
@@ -43,7 +44,8 @@ namespace VisaXmlMaker.Model
         /// Names OR first letters of the names of the operator who processed  the application data
         /// Varchar(30) Latin capital letters (A-Z) and spaces
         /// </summary>
-        [Position(GroupName = "Заголовок", ColSpan = 2, Desc = "Пользователь", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Заголовок", ColSpan = 2, Desc = "Пользователь", ControlType = typeof(ComboBox),
+            ListerName="users")]
         public string mh_usera;
 
         /// <summary>

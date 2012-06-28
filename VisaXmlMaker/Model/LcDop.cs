@@ -22,7 +22,8 @@ namespace VisaXmlMaker.Model
         /// Country of birth
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Страна рождения", ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Страна рождения",
+            ControlType = typeof(ComboBox), ListerName = "countries", OnlyFromList = true)]
         public string ld_mrjdarj;
 
         /// <summary>
@@ -32,28 +33,32 @@ namespace VisaXmlMaker.Model
         /// which uses Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, 
         /// Mongolia, Serbia, Macedonia etc.).
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Город рождения", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Город рождения",
+            PutToRight = true, ControlType = typeof(ComboBox) ,ListerName="cities")]
         public string ld_mrjnm;
 
         /// <summary>
         /// Nationality at birth
         /// Char(2) ISO 3166 two letter code. See Code Table 3
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Национальность при рождении", ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Национальность при рождении",
+            ControlType = typeof(ComboBox), ListerName = "countries", OnlyFromList = true)]
         public string ld_mrjgraj;
 
         /// <summary>
         /// Marital status
         /// Char(1) code. See Code table 4.
         /// </summary>
-        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Семейное положение", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(DesiredIndex = -1, GroupName = "Дополнительная информация", Desc = "Семейное положение", PutToRight = true, 
+            ControlType = typeof(ComboBox), ListerName="martial_status", OnlyFromList=true)]
         public string ld_zenen;
 
         /// <summary>
         /// Home address - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Адрес проживания", Desc = "Страна", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Адрес проживания", Desc = "Страна", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string ld_jit_darj;
 
         /// <summary>
@@ -63,7 +68,8 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Адрес проживания", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Адрес проживания", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox), 
+            ListerName="cities")]
         public string ld_jit_nm;
 
         /// <summary>
@@ -73,28 +79,28 @@ namespace VisaXmlMaker.Model
         /// is in country which uses Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, 
         /// Mongolia, Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Адрес проживания", Desc = "Улица, дом, квартира и т.п.", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Адрес проживания", Desc = "Улица, дом, квартира и т.п.", ControlType = typeof(TextBox))]
         public string ld_jit_ul;
 
         /// <summary>
         /// Home address – ZIP code
         /// Varchar(10) 
         /// </summary>
-        [Position(GroupName = "Адрес проживания", Desc = "Индекс", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Адрес проживания", Desc = "Индекс", PutToRight = true, ControlType = typeof(TextBox))]
         public string ld_jit_pk;
 
         /// <summary>
         /// Personal telephone number
         /// Varchar(30) up to 30 digits (0-9) without spaces, dashes  etc.
         /// </summary>
-        [Position(GroupName = "Адрес проживания", Desc = "Телефон", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Адрес проживания", Desc = "Телефон", ControlType = typeof(TextBox))]
         public string ld_tel;
 
         /// <summary>
         /// Personal  e-mail address
         /// Varchar(250) all allowed symbols in e-mail addresses
         /// </summary>
-        [Position(GroupName = "Адрес проживания", Desc = "Электронная почта", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Адрес проживания", Desc = "Электронная почта", PutToRight = true, ControlType = typeof(TextBox))]
         public string ld_jit_email;
 
         /// <summary>
@@ -105,14 +111,16 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia,
         /// Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Название учреждения", ColSpan=3, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Название учреждения", ColSpan=3, ControlType = typeof(ComboBox),
+            ListerName= "workplace")]
         public string ld_rabota;
 
         /// <summary>
         /// Occupation code
         /// Char(2) two letter code. See Code Table 5
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Код профессии", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Код профессии", ControlType = typeof(ComboBox), 
+            ListerName = "occupation", OnlyFromList = true)]
         public string ld_profkod;
 
         /// <summary>
@@ -120,14 +128,16 @@ namespace VisaXmlMaker.Model
         /// Varchar(70) Cyrillic letters  and spaces. Currently is used free description in 
         /// BULGARIAN language
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Другая профессия", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Другая профессия", PutToRight = true,
+            ControlType = typeof(ComboBox), ListerName = "occupation_other", OnlyFromList = false)]
         public string ld_profesia;
 
         /// <summary>
         /// Employer’s /School’s address – Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Страна", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Страна", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string ld_sl_darj;
 
         /// <summary>
@@ -137,7 +147,8 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Город", PutToRight = true, ControlType = typeof(ComboBox),
+            ListerName="cities")]
         public string ld_sl_nm;
 
         /// <summary>
@@ -147,35 +158,37 @@ namespace VisaXmlMaker.Model
         /// is situated in country which uses Cyrillic as well (Bulgaria, Russia, Ukraine, 
         /// Byelorussia, Kazakhstan, Mongolia, Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Улица, дом и т.п.", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Улица, дом и т.п.", ControlType = typeof(TextBox))]
         public string ld_sl_ul;
 
         /// <summary>
         /// Employer’s / School’s address – ZIP code
         /// Varchar(10) 
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Индекс", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Индекс", PutToRight = true, ControlType = typeof(TextBox))]
         public string ld_sl_pk;
 
         /// <summary>
         /// Employer’s / School’s telephone number
         /// Varchar(30) up to 30 digits (0-9) without spaces, dashes  etc.
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Телефон", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Телефон", ControlType = typeof(TextBox))]
         public string ld_sltel;
 
         /// <summary>
         /// Employer’s / School’s Fax number
         /// Varchar(30) up to 30 digits (0-9) without spaces, dashes  etc.
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Факс", PutToRight = true, ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Факс", PutToRight = true, ControlType = typeof(TextBox))]
         public string ld_sl_fax;
 
         /// <summary>
         /// Employer’s / School’s e-mail address
         /// Varchar(250) all allowed symbols in e-mail addresses
         /// </summary>
-        [Position(GroupName = "Место работы (учебы)", Desc = "Электронная почта", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Место работы (учебы)", Desc = "Электронная почта", ControlType = typeof(TextBox))]
         public string ld_sl_email;
     }
 }
+
+

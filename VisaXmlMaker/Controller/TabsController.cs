@@ -5,6 +5,7 @@ using System.Text;
 using System.Reflection;
 using System.Windows.Forms;
 using VisaXmlMaker.Model;
+using VisaXmlMaker.Model.Listers;
 
 namespace VisaXmlMaker.Controller
 {
@@ -152,6 +153,10 @@ namespace VisaXmlMaker.Controller
         {
             Control c = info.PositionAttr.GetControl();
             UpdateControlValue(info, c);
+            if (c is ComboBox)
+            {
+                (c as ComboBox).DropDownWidth *= 2;
+            }
             c.Padding = new Padding(5);
             c.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
             c.Tag = info;
@@ -169,9 +174,13 @@ namespace VisaXmlMaker.Controller
 
         private static void UpdateFieldValue(FillInfo info, Control c)
         {
-            if ((c is TextBox) || (c is ComboBox))
+            if (c is TextBox)
             {
                 info.Field.SetValue(info.Client, c.Text);
+            }
+            else if (c is ComboBox)
+            {
+                info.Field.SetValue(info.Client, GetComboValue(c as ComboBox));
             }
             else if (c is DateTimePicker)
             {
@@ -184,7 +193,7 @@ namespace VisaXmlMaker.Controller
                 }
             }
         }
-
+        
         private static void UpdateControlValue(FillInfo info, Control c)
         {
             /// Getting the value of the field. All fields are strings but they can be null or empty so we need
@@ -206,7 +215,18 @@ namespace VisaXmlMaker.Controller
                         if (c is TextBox)
                             c.Text = (string)val;
                         else if (c is ComboBox)
+                        {
                             c.Text = (string)val;
+                            if (!string.IsNullOrEmpty(info.PositionAttr.ListerName))
+                            {
+                                ((ComboBox)c).Items.AddRange(ListersHolder.Holder[info.PositionAttr.ListerName].Enum.ToArray());
+                                if (info.PositionAttr.OnlyFromList)
+                                {
+                                    ((ComboBox)c).DropDownStyle = ComboBoxStyle.DropDownList;
+                                    ((ComboBox)c).SelectedItem = FindComboItem((ComboBox)c, (string)val);
+                                }
+                            }
+                        }
                         else if (c is DateTimePicker)
                             (c as DateTimePicker).Value = (DateTime)val;
                         else if (c is CheckBox)
@@ -220,7 +240,24 @@ namespace VisaXmlMaker.Controller
             }
         }
 
-
+        private static object FindComboItem(ComboBox c, string p)
+        {
+            foreach (object obj in c.Items)
+            {
+                if (obj is ListerData)
+                {
+                    if ((obj as ListerData).Item == p) return obj;
+                }
+            }
+            return p;
+        }
+ 
+        private static object GetComboValue(ComboBox c)
+        {
+            if (c.SelectedItem is ListerData) 
+                return (c.SelectedItem as ListerData).Item;
+            return c.Text;
+        }   
     }
 
     public class FillInfo

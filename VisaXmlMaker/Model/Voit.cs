@@ -47,7 +47,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(60) Latin OR Cyrillic capital letters,
         /// numbers, dashes (-) and dots (.)
         /// </summary>
-        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Компания, выпустившая ваучер", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Компания, выпустившая ваучер", 
+            ControlType = typeof(ComboBox), ListerName = "vaucher_company")]
         public string vime;
 
         /// <summary>
@@ -55,7 +56,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(60) Cyrillic capital letters, numbers, 
         /// dashes (-), dots (.)
         /// </summary>
-        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Принимающая компания", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Принимающая компания", ControlType = typeof(ComboBox),
+            ListerName="vaucher_host_company")]
         public string bgime;
 
         /// <summary>
@@ -63,7 +65,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(60) Cyrillic capital letters, numbers,
         /// dashes (-), commas (,), dots (.) and spaces.
         /// </summary>
-        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Название и адрес отеля", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Организованный туризм", ColSpan = 2, Desc = "Название и адрес отеля", ControlType = typeof(ComboBox),
+            ListerName="hotels")]
         public string bgadres;
 
         /// <summary>

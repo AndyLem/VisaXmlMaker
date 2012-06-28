@@ -39,7 +39,6 @@ namespace VisaXmlMaker.Model
             {
                 return null;
             }
-            
         }
     }
 }

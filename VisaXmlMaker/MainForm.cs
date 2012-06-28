@@ -20,6 +20,7 @@ namespace VisaXmlMaker
         public MainForm()
         {
             InitializeComponent();
+            Model.Listers.ListersHolder.Holder.Load("lists.xml");
             rootObj = ModelIO.Load("data.xml");
             if (rootObj != null)
                 tabsCtrl.Fill(this, rootObj);
@@ -27,6 +28,7 @@ namespace VisaXmlMaker
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+
         }
 
         private void loadImageBtn_Click(object sender, EventArgs e)
@@ -37,6 +39,11 @@ namespace VisaXmlMaker
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             ModelIO.Save(rootObj, "test.xml");
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            Model.Listers.ListersHolder.Holder.Save("lists.xml");
         }
     }
 }

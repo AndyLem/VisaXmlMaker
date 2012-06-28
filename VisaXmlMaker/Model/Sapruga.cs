@@ -68,7 +68,8 @@ namespace VisaXmlMaker.Model
         /// Spouse’s Country of birth
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Страна рождения", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Страна рождения", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string sp_mrjdarj;
 
         /// <summary>
@@ -78,7 +79,12 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia,
         /// Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Город рождения", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Супруг(а)", ColSpan = 2, Desc = "Город рождения", ControlType = typeof(ComboBox),
+            ListerName="cities")]
         public string sp_mrjnm;
     }
 }
+
+
+
+

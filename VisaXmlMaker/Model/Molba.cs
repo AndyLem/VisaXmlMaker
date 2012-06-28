@@ -41,7 +41,8 @@ namespace VisaXmlMaker.Model
         /// C = Short stay
         /// D = Long stay
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Тип визы", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Тип визы", ControlType = typeof(ComboBox),
+            ListerName = "visa_type", OnlyFromList=true)]
         public string vidvis;
 
         /// <summary>
@@ -50,7 +51,8 @@ namespace VisaXmlMaker.Model
         /// 2 = double entries
         /// M = multiple entries
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Количество въездов", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Количество въездов", ControlType = typeof(ComboBox),
+            ListerName="enters_count", OnlyFromList = true)]
         public string brvl;
 
         /// <summary>
@@ -63,7 +65,8 @@ namespace VisaXmlMaker.Model
         /// I = up to 4 years (valid for multiple entry C visas only)
         /// J = up to 5 years (valid for multiple entry C visas only)
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Период действия мультивизы", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Период действия мультивизы", ControlType = typeof(ComboBox),
+            ListerName="visa_term", OnlyFromList=true)]
         public string valvis;
 
         /// <summary>
@@ -84,14 +87,15 @@ namespace VisaXmlMaker.Model
         /// For short entry visas =  1 to 90 days
         /// For long stay visas =  180 or 360 days
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Длительность пребывания", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Длительность пребывания", ControlType = typeof(TextBox))]
         public string brdni;
 
         /// <summary>
         /// Purpose of travel
         /// Three letter code. See Code table 6
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Цель поездки", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Цель поездки", ControlType = typeof(ComboBox),
+            ListerName = "purpose", OnlyFromList = true)]
         public string cel;
 
         /// <summary>
@@ -99,7 +103,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Cyrillic letters, commas, dots  and spaces.
         /// Currently is used free description in BULGARIAN language 
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Другая цель", ControlType = typeof(TextBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Другая цель", ControlType = typeof(ComboBox),
+            ListerName = "purpose_other", OnlyFromList = false)]
         public string celdruga;
 
         /// <summary>
@@ -133,21 +138,24 @@ namespace VisaXmlMaker.Model
         /// Amount of collected application fee
         /// Decimal number  12.2
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Размер пошлины", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Размер пошлины", ControlType = typeof(ComboBox), 
+            ListerName="fee")]
         public string cenamol;
 
         /// <summary>
         /// Currency in which the fee was collected
         /// Char(3) Three letter currency code. Capital latin letters.
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Валюта пошлины", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Валюта пошлины", ControlType = typeof(ComboBox),
+            ListerName = "fee_currency")]
         public string cenacurr;
 
         /// <summary>
         /// Main destination - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Страна назначения", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Страна назначения", ControlType = typeof(ComboBox), 
+            ListerName = "countries", OnlyFromList = true)]
         public string maindest;
 
         /// <summary>
@@ -157,14 +165,16 @@ namespace VisaXmlMaker.Model
         /// Cyrillic as well (Bulgaria, Russia, Ukraine, Byelorussia, Kazakhstan, Mongolia, 
         /// Serbia, Macedonia etc.).
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Город назначения", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Город назначения", ControlType = typeof(ComboBox),
+            ListerName="cities")]
         public string maindestnm;
 
         /// <summary>
         /// Border of first entry - Country
         /// Char(2) ISO 3166 two letter code. See Code Table 2
         /// </summary>
-        [Position(GroupName = "Запрос на визу", Desc = "Первая пересекаемая граница", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", Desc = "Первая пересекаемая граница",
+            ControlType = typeof(ComboBox), ListerName = "countries", OnlyFromList = true)]
         public string gkpp_darj;
 
         /// <summary>
@@ -172,7 +182,8 @@ namespace VisaXmlMaker.Model
         /// Varchar(100) Cyrillic letters, dots  and spaces.
         /// Currently is used free description in BULGARIAN language
         /// </summary>
-        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Точка пересечения границы", ControlType = typeof(ComboBox))]
+        [Position(GroupName = "Запрос на визу", PutToRight = true, Desc = "Точка пересечения границы", ControlType = typeof(ComboBox),
+            ListerName="border_point")]
         public string gkpp_text;
 
         /// <summary>
@@ -192,3 +203,6 @@ namespace VisaXmlMaker.Model
         public string Text_ini;
     }
 }
+
+
+

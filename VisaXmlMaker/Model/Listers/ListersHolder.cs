@@ -37,29 +37,33 @@ namespace VisaXmlMaker.Model.Listers
         private ListersHolder()
         {
             _listers = new Dictionary<string, Lister>();
-            Lister docTypes = this["docTypes"];
-            docTypes.AddLine("B");
-            docTypes.AddLine("C");
-            docTypes.AddLine("D");
-            docTypes.AddLine("G");
-            docTypes.AddLine("L");
-            docTypes.AddLine("M");
-            docTypes.AddLine("N");
-            docTypes.AddLine("P");
+            //Lister docTypes = this["docTypes"];
+            //docTypes.AddLine("B", "Travel document for refugees");
+            //docTypes.AddLine("C", "Foreigner's passport");
+            //docTypes.AddLine("D", "Diplomatic passport");
+            //docTypes.AddLine("G", "Travel document for stateless persons");
+            //docTypes.AddLine("L", "Laissez-passer");
+            //docTypes.AddLine("M", "Seaman's book");
+            //docTypes.AddLine("N", "Emergency (Temporary) passport");
+            //docTypes.AddLine("P", "Ordinary passport");
+            //docTypes.AddLine("P", "Ordinary passport");
+            //docTypes.AddLine("S", "Service passport");
+            //docTypes.AddLine("U", "Travel document used by UNMIK (Kosovo)");
+            //docTypes.AddLine("X", "Other type of travel document");
+
         }
+
 
         public void Save(string fileName)
         {
             try
             {
-                //var klList = from key in _listers.Keys select new KeyListPair() { Key = key, List = _listers[key] };
                 List<KeyListPair> saveList = new List<KeyListPair>();
                 foreach (string key in _listers.Keys)
                 {
                     saveList.Add(new KeyListPair() { Key = key, List = _listers[key] });
                 }
-                //saveList.AddRange(klList);
-
+                
                 FileStream fs = File.Create(fileName);
                 XmlSerializer ser = new XmlSerializer(typeof(List<KeyListPair>));
                 ser.Serialize(fs, saveList);
@@ -75,8 +79,14 @@ namespace VisaXmlMaker.Model.Listers
             try
             {
                 FileStream fs = File.Open(fileName, FileMode.Open);
-                XmlSerializer ser = new XmlSerializer(typeof(Dictionary<string, Lister>));
-                Dictionary<string, Lister> _listers = (Dictionary<string, Lister>)ser.Deserialize(fs);
+                XmlSerializer ser = new XmlSerializer(typeof(List<KeyListPair>));
+                List<KeyListPair> klList = (List<KeyListPair>)ser.Deserialize(fs);
+
+                _listers.Clear();
+                foreach (KeyListPair klp in klList)
+                {
+                    _listers.Add(klp.Key, klp.List);
+                }
                 fs.Close();
             }
             catch
