@@ -1,0 +1,1544 @@
+<?xml version="1.0"?>
+<ArrayOfKeyListPair xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <KeyListPair>
+    <Key>docTypes</Key>
+    <List>
+      <_data>
+        <ListerData>
+          <Item>B</Item>
+          <Description>Travel document for refugees</Description>
+        </ListerData>
+        <ListerData>
+          <Item>C</Item>
+          <Description>Foreigner's passport</Description>
+        </ListerData>
+        <ListerData>
+          <Item>D</Item>
+          <Description>Diplomatic passport</Description>
+        </ListerData>
+        <ListerData>
+          <Item>G</Item>
+          <Description>Travel document for stateless persons</Description>
+        </ListerData>
+        <ListerData>
+          <Item>L</Item>
+          <Description>Laissez-passer</Description>
+        </ListerData>
+        <ListerData>
+          <Item>M</Item>
+          <Description>Seaman's book</Description>
+        </ListerData>
+        <ListerData>
+          <Item>N</Item>
+          <Description>Emergence (Temporary) passport</Description>
+        </ListerData>
+        <ListerData>
+          <Item>P</Item>
+          <Description>Ordinary passport</Description>
+        </ListerData>
+        <ListerData>
+          <Item>S</Item>
+          <Description>Service passport</Description>
+        </ListerData>
+        <ListerData>
+          <Item>U</Item>
+          <Description>Travel document used by UNMIK (Kosovo)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>X</Item>
+          <Description>Other type of travel document</Description>
+        </ListerData>
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>countries</Key>
+    <List>
+      <_data>
+        <ListerData>
+          <Item>AD</Item>
+          <Description>ANDORRA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AE</Item>
+          <Description>UNITED ARAB EMIRATES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AF</Item>
+          <Description>AFGHANISTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AG</Item>
+          <Description>ANTIGUA AND BARBUDA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AL</Item>
+          <Description>ALBANIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AM</Item>
+          <Description>ARMENIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AN</Item>
+          <Description>NETHERLANDS ANTILLES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AO</Item>
+          <Description>ANGOLA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AQ</Item>
+          <Description>ANTARCTICA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AR</Item>
+          <Description>ARGENTINA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AS</Item>
+          <Description>AMERICAN SAMOA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AT</Item>
+          <Description>AUSTRIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AU</Item>
+          <Description>AUSTRALIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AW</Item>
+          <Description>ARUBA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AZ</Item>
+          <Description>AZERBAIJAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BA</Item>
+          <Description>BOSNIA-HERZEGOVINA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BB</Item>
+          <Description>BARBADOS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BD</Item>
+          <Description>BANGLADESH</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BE</Item>
+          <Description>BELGIUM</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BG</Item>
+          <Description>BULGARIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BH</Item>
+          <Description>BAHRAIN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BI</Item>
+          <Description>BURUNDI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BJ</Item>
+          <Description>BENIN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BM</Item>
+          <Description>BERMUDA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BN</Item>
+          <Description>BRUNEI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BO</Item>
+          <Description>BOLIVIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BR</Item>
+          <Description>BRAZIL</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BS</Item>
+          <Description>BAHAMAS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BT</Item>
+          <Description>BHUTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BU</Item>
+          <Description>MYANMAR-BURMA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BV</Item>
+          <Description>BOUVET ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BW</Item>
+          <Description>BOTSWANA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BY</Item>
+          <Description>BELARUS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BZ</Item>
+          <Description>BELIZE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CA</Item>
+          <Description>CANADA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CC</Item>
+          <Description>COCOS ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CE</Item>
+          <Description>MONTENEGRO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CF</Item>
+          <Description>CENTRAL AFRICAN REPUBLIC</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CG</Item>
+          <Description>CONGO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CH</Item>
+          <Description>SWITZERLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CI</Item>
+          <Description>COTE D'IVOIRE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CK</Item>
+          <Description>COOK ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CL</Item>
+          <Description>CHILE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CM</Item>
+          <Description>CAMEROON</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CN</Item>
+          <Description>CHINA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CO</Item>
+          <Description>COLOMBIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CR</Item>
+          <Description>COSTA RICA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CS</Item>
+          <Description>SERBIA AND MONTENEGRO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CU</Item>
+          <Description>CUBA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CV</Item>
+          <Description>CAPE VERDE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CX</Item>
+          <Description>CHRISTMAS ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CY</Item>
+          <Description>CYPRUS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>CZ</Item>
+          <Description>CZECH REPUBLIC</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DE</Item>
+          <Description>GERMANY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DJ</Item>
+          <Description>DJIBOUTI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DK</Item>
+          <Description>DENMARK</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DM</Item>
+          <Description>DOMINICA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DO</Item>
+          <Description>DOMINICAN REPUBLIC</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DZ</Item>
+          <Description>ALGERIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>EC</Item>
+          <Description>ECUADOR</Description>
+        </ListerData>
+        <ListerData>
+          <Item>EE</Item>
+          <Description>ESTONIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>EG</Item>
+          <Description>EGYPT</Description>
+        </ListerData>
+        <ListerData>
+          <Item>EH</Item>
+          <Description>WESTERN SAHARA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ER</Item>
+          <Description>ERITREA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ES</Item>
+          <Description>SPAIN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ET</Item>
+          <Description>ETHIOPIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>FI</Item>
+          <Description>FINLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>FJ</Item>
+          <Description>FIJI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>FK</Item>
+          <Description>FALKLAND ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>FO</Item>
+          <Description>FAROE ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>FQ</Item>
+          <Description>FRENCH SOUTHERN TERRITORIES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>FR</Item>
+          <Description>FRANCE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GA</Item>
+          <Description>GABON</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GB</Item>
+          <Description>UNITED KINGDOM</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GD</Item>
+          <Description>GRENADA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GE</Item>
+          <Description>GEORGIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GF</Item>
+          <Description>FRENCH GUYANA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GH</Item>
+          <Description>GHANA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GI</Item>
+          <Description>GIBRALTAR</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GL</Item>
+          <Description>GREENLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GM</Item>
+          <Description>GAMBIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GN</Item>
+          <Description>GUINEA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GP</Item>
+          <Description>GUADELOUPE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GQ</Item>
+          <Description>EQUATORIAL GUINEA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GR</Item>
+          <Description>GREECE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GT</Item>
+          <Description>GUATEMALA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GU</Item>
+          <Description>GUAM</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GW</Item>
+          <Description>GUINEA BISSAU</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GY</Item>
+          <Description>GUYANA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HK</Item>
+          <Description>HONG KONG</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HM</Item>
+          <Description>HEARD AND MCDONALD ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HN</Item>
+          <Description>HONDURAS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HR</Item>
+          <Description>CROATIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HT</Item>
+          <Description>HAITI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HU</Item>
+          <Description>HUNGARY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HV</Item>
+          <Description>BURKINA FASO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IA</Item>
+          <Description>ANGUILLA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ID</Item>
+          <Description>INDONESIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IE</Item>
+          <Description>IRELAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IL</Item>
+          <Description>ISRAEL</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IM</Item>
+          <Description>MARSHALL ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IN</Item>
+          <Description>INDIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IO</Item>
+          <Description>BRITISH INDIAN OCEAN TERRITORY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IQ</Item>
+          <Description>IRAQ</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IR</Item>
+          <Description>IRAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IS</Item>
+          <Description>ICELAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>IT</Item>
+          <Description>ITALY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>JM</Item>
+          <Description>JAMAICA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>JO</Item>
+          <Description>JORDAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>JP</Item>
+          <Description>JAPAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KE</Item>
+          <Description>KENYA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KG</Item>
+          <Description>KYRGYZSTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KH</Item>
+          <Description>CAMBODIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KI</Item>
+          <Description>KIRIBATI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KM</Item>
+          <Description>COMOROS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KN</Item>
+          <Description>ST KITTS AND NEVIS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KP</Item>
+          <Description>KOREA-PEOPLE'S REPUBLIC</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KR</Item>
+          <Description>KOREA-REPUBLIC</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KW</Item>
+          <Description>KUWAIT</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KY</Item>
+          <Description>CAYMAN ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KZ</Item>
+          <Description>KAZAKHSTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LA</Item>
+          <Description>LAOS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LB</Item>
+          <Description>LEBANON</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LC</Item>
+          <Description>ST LUCIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LI</Item>
+          <Description>LIECHTENSTEIN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LK</Item>
+          <Description>SRI LANKA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LR</Item>
+          <Description>LIBERIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LS</Item>
+          <Description>LESOTHO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LT</Item>
+          <Description>LITHUANIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LU</Item>
+          <Description>LUXEMBURG</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LV</Item>
+          <Description>LATVIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LY</Item>
+          <Description>LIBYA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MA</Item>
+          <Description>MOROCCO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MC</Item>
+          <Description>MONACO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MD</Item>
+          <Description>MOLDOVA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MG</Item>
+          <Description>MADAGASKAR</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MK</Item>
+          <Description>MACEDONIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ML</Item>
+          <Description>MALI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MN</Item>
+          <Description>MONGOLIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MO</Item>
+          <Description>MACAO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MQ</Item>
+          <Description>MARTINIQUE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MR</Item>
+          <Description>MAURITANIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MS</Item>
+          <Description>MONTSERRAT</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MT</Item>
+          <Description>MALTA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MU</Item>
+          <Description>MAURITIUS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MV</Item>
+          <Description>MALDIVES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MW</Item>
+          <Description>MALAWI</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MX</Item>
+          <Description>MEXICO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MY</Item>
+          <Description>MALAYSIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MZ</Item>
+          <Description>MOZAMBOQUE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NA</Item>
+          <Description>NAMIBIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NC</Item>
+          <Description>NEW CALEDONIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NE</Item>
+          <Description>NIGER</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NF</Item>
+          <Description>NORFOLK ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NG</Item>
+          <Description>NIGERIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NI</Item>
+          <Description>NICARAGUA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NL</Item>
+          <Description>NETHERLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NM</Item>
+          <Description>NORTHERN MARIANA ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NO</Item>
+          <Description>NORWAY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NP</Item>
+          <Description>NEPAL</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NR</Item>
+          <Description>NAURU</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NU</Item>
+          <Description>NIUE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NZ</Item>
+          <Description>NEW ZEALAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>OM</Item>
+          <Description>OMAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PA</Item>
+          <Description>PANAMA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PB</Item>
+          <Description>PALAU ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PC</Item>
+          <Description>MICRONESIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PE</Item>
+          <Description>PERU</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PF</Item>
+          <Description>FRENCH POLYNESIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PG</Item>
+          <Description>PAPUA NEW GUINEA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PH</Item>
+          <Description>PHILLIPPINES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PK</Item>
+          <Description>PAKISTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PL</Item>
+          <Description>POLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PM</Item>
+          <Description>ST PIERRE AND MIQUELON</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PN</Item>
+          <Description>PITCAIRN ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PR</Item>
+          <Description>PUERTO RICO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PS</Item>
+          <Description>PALESTINA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PT</Item>
+          <Description>PORTUGAL</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PY</Item>
+          <Description>PARAGUAY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>QA</Item>
+          <Description>QATAR</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RE</Item>
+          <Description>REUNION</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RO</Item>
+          <Description>ROMANIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RS</Item>
+          <Description>SERBIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RU</Item>
+          <Description>RUSSIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RW</Item>
+          <Description>RWANDA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SA</Item>
+          <Description>SAUDI ARABIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SB</Item>
+          <Description>SOLOMON ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SC</Item>
+          <Description>SEYSHELLES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SD</Item>
+          <Description>SUDAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SE</Item>
+          <Description>SWEDEN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SG</Item>
+          <Description>SINGAPORE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SH</Item>
+          <Description>ST HELENA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SI</Item>
+          <Description>SLOVENIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SJ</Item>
+          <Description>SVALBARD AND JAN MAYEN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SK</Item>
+          <Description>SLOVAKIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SL</Item>
+          <Description>SIERRA LEONE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SM</Item>
+          <Description>SAN MARINO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SN</Item>
+          <Description>SENEGAL</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SO</Item>
+          <Description>SOMALIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SR</Item>
+          <Description>SURINAM</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ST</Item>
+          <Description>SAO TOME AND PRINCIPE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SV</Item>
+          <Description>EL SALVADOR</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SY</Item>
+          <Description>SYRIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SZ</Item>
+          <Description>SWAZILAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TC</Item>
+          <Description>TURKS AND CAICOS ISLAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TD</Item>
+          <Description>CHAD</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TG</Item>
+          <Description>TOGO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TH</Item>
+          <Description>THAILAND</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TJ</Item>
+          <Description>TAJIKISTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TK</Item>
+          <Description>TOKELAU</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TM</Item>
+          <Description>TURKMENISTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TN</Item>
+          <Description>TUNISIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TO</Item>
+          <Description>TONGA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TP</Item>
+          <Description>EAST TIMOR</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TR</Item>
+          <Description>TURKEY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TT</Item>
+          <Description>TRINIDAD AND TOBAGO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TV</Item>
+          <Description>TUVALU</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TW</Item>
+          <Description>TAIWAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TZ</Item>
+          <Description>TANZANIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UA</Item>
+          <Description>UKRAINE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UG</Item>
+          <Description>UGANDA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UN</Item>
+          <Description>UNITED NATIONS ORGANIZATION</Description>
+        </ListerData>
+        <ListerData>
+          <Item>US</Item>
+          <Description>USA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UY</Item>
+          <Description>URUGUAY</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UZ</Item>
+          <Description>UZBEKISTAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VA</Item>
+          <Description>VATICAN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VC</Item>
+          <Description>ST VINCENT  AND GRENADINES</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VE</Item>
+          <Description>VENEZUELA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VG</Item>
+          <Description>VIRGIN ISLAND(BRITISH)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VI</Item>
+          <Description>VIRGIN ISLANDS(US)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VN</Item>
+          <Description>VIETNAM</Description>
+        </ListerData>
+        <ListerData>
+          <Item>VU</Item>
+          <Description>VANUATU</Description>
+        </ListerData>
+        <ListerData>
+          <Item>WF</Item>
+          <Description>WALLIS AND FUTUNA ISLANDS</Description>
+        </ListerData>
+        <ListerData>
+          <Item>WS</Item>
+          <Description>SAMOA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>XK</Item>
+          <Description>KOSOVO</Description>
+        </ListerData>
+        <ListerData>
+          <Item>YE</Item>
+          <Description>YEMEN</Description>
+        </ListerData>
+        <ListerData>
+          <Item>YU</Item>
+          <Description>YOUGOSLAVIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZA</Item>
+          <Description>SOUTH AFRICA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZM</Item>
+          <Description>ZAMBIA</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZR</Item>
+          <Description>ZAIRE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZW</Item>
+          <Description>ZIMBABWE</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NN</Item>
+          <Description>(STATELESS PERSON)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>XX</Item>
+          <Description>(UNKNOWN CITIZENSHIP)</Description>
+        </ListerData>
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>martial_status</Key>
+    <List>
+      <_data>
+        <ListerData>
+          <Item>N</Item>
+          <Description>Single</Description>
+        </ListerData>
+        <ListerData>
+          <Item>O</Item>
+          <Description>Separated</Description>
+        </ListerData>
+        <ListerData>
+          <Item>R</Item>
+          <Description>Divorced</Description>
+        </ListerData>
+        <ListerData>
+          <Item>V</Item>
+          <Description>Widow/er</Description>
+        </ListerData>
+        <ListerData>
+          <Item>Z</Item>
+          <Description>Married</Description>
+        </ListerData>
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>occupation</Key>
+    <List>
+      <_data>
+        <ListerData>
+          <Item>AH</Item>
+          <Description>Architect</Description>
+        </ListerData>
+        <ListerData>
+          <Item>AR</Item>
+          <Description>Artist</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BE</Item>
+          <Description>No occupation</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BK</Item>
+          <Description>Banker</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DI</Item>
+          <Description>Diplomat</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DO</Item>
+          <Description>Medical and paramedical profession (doctor, surgeon, nurse, vet)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DR</Item>
+          <Description>Manager</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DS</Item>
+          <Description>Civil servant</Description>
+        </ListerData>
+        <ListerData>
+          <Item>EE</Item>
+          <Description>Electronics expert</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HI</Item>
+          <Description>Chemist / Chemical engineer</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KE</Item>
+          <Description>Computer expert</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MA</Item>
+          <Description>Magistrate</Description>
+        </ListerData>
+        <ListerData>
+          <Item>MO</Item>
+          <Description>Seamen</Description>
+        </ListerData>
+        <ListerData>
+          <Item>NA</Item>
+          <Description>Scientific researcher</Description>
+        </ListerData>
+        <ListerData>
+          <Item>OK</Item>
+          <Description>Fashion, Cosmetics</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PE</Item>
+          <Description>Pensioner</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PO</Item>
+          <Description>Politician</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PP</Item>
+          <Description>Clergyman, religious figure</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PR</Item>
+          <Description>Diplomats private servant</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PS</Item>
+          <Description>Administrative, technical and service staff (diplomatic and consular posts)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PV</Item>
+          <Description>Policeman or Soldier</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RA</Item>
+          <Description>Blue collar worker</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SA</Item>
+          <Description>Self-employed</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SE</Item>
+          <Description>Company executive</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SO</Item>
+          <Description>Chauffeur, Lorry driver</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ST</Item>
+          <Description>Student, Trainee</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TA</Item>
+          <Description>Tradesman</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TE</Item>
+          <Description>Other kind of technician</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UC</Item>
+          <Description>Teacher</Description>
+        </ListerData>
+        <ListerData>
+          <Item>WR</Item>
+          <Description>White collar worker</Description>
+        </ListerData>
+        <ListerData>
+          <Item>XX</Item>
+          <Description>Others</Description>
+        </ListerData>
+        <ListerData>
+          <Item>YU</Item>
+          <Description>Legal profession (lawyer, legal adviser)</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZA</Item>
+          <Description>Artisan</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZE</Item>
+          <Description>Farmer</Description>
+        </ListerData>
+        <ListerData>
+          <Item>ZU</Item>
+          <Description>Journalist</Description>
+        </ListerData>
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>occupation_other</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>purpose</Key>
+    <List>
+      <_data>
+        <ListerData>
+          <Item>BIZ</Item>
+          <Description>Business</Description>
+        </ListerData>
+        <ListerData>
+          <Item>BRA</Item>
+          <Description>Visa for marriage</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DEL</Item>
+          <Description>Professional visit</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DIP</Item>
+          <Description>Diplomatic mission</Description>
+        </ListerData>
+        <ListerData>
+          <Item>DRU</Item>
+          <Description>Other</Description>
+        </ListerData>
+        <ListerData>
+          <Item>GOS</Item>
+          <Description>Visit to family or friends</Description>
+        </ListerData>
+        <ListerData>
+          <Item>HUM</Item>
+          <Description>Humanitarian</Description>
+        </ListerData>
+        <ListerData>
+          <Item>KUL</Item>
+          <Description>Cultural event</Description>
+        </ListerData>
+        <ListerData>
+          <Item>LEC</Item>
+          <Description>Medical reasons</Description>
+        </ListerData>
+        <ListerData>
+          <Item>PPR</Item>
+          <Description>To get Residence permit</Description>
+        </ListerData>
+        <ListerData>
+          <Item>RBT</Item>
+          <Description>Work</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SLD</Item>
+          <Description>Commercial event, Trade fair</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SLU</Item>
+          <Description>Official / Political</Description>
+        </ListerData>
+        <ListerData>
+          <Item>SPO</Item>
+          <Description>Sporting event</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TRA</Item>
+          <Description>Transit</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TUO</Item>
+          <Description>Organized tourism</Description>
+        </ListerData>
+        <ListerData>
+          <Item>TUR</Item>
+          <Description>Tourism</Description>
+        </ListerData>
+        <ListerData>
+          <Item>UCE</Item>
+          <Description>Study</Description>
+        </ListerData>
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>relation</Key>
+    <List>
+      <_data>
+        <ListerData>
+          <Item>B</Item>
+          <Description>Father</Description>
+        </ListerData>
+        <ListerData>
+          <Item>C</Item>
+          <Description>Brother/Sister</Description>
+        </ListerData>
+        <ListerData>
+          <Item>D</Item>
+          <Description>Son/Daughter</Description>
+        </ListerData>
+        <ListerData>
+          <Item>F</Item>
+          <Description>Grandfather</Description>
+        </ListerData>
+        <ListerData>
+          <Item>G</Item>
+          <Description>Grandmother</Description>
+        </ListerData>
+        <ListerData>
+          <Item>L</Item>
+          <Description>Uncle/Aunt</Description>
+        </ListerData>
+        <ListerData>
+          <Item>M</Item>
+          <Description>Mother</Description>
+        </ListerData>
+        <ListerData>
+          <Item>N</Item>
+          <Description>Nephew/Niece</Description>
+        </ListerData>
+        <ListerData>
+          <Item>S</Item>
+          <Description>Spouse</Description>
+        </ListerData>
+        <ListerData>
+          <Item>V</Item>
+          <Description>Grandson/Granddaughter</Description>
+        </ListerData>
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>visa_centers</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>users</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>sex</Key>
+    <List>
+      <_data>
+	          <ListerData>
+          <Item>M</Item>
+          <Description>Male</Description>
+        </ListerData>
+		        <ListerData>
+          <Item>F</Item>
+          <Description>Female</Description>
+        </ListerData>
+      
+      </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>cities</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>workplace</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>visa_type</Key>
+    <List>
+      <_data>
+	    <ListerData>
+          <Item>A</Item>
+          <Description>Airport transit</Description>
+        </ListerData>
+			    <ListerData>
+          <Item>B</Item>
+          <Description>Transit</Description>
+        </ListerData>
+			    <ListerData>
+          <Item>C</Item>
+          <Description>Short stay</Description>
+        </ListerData>
+			    <ListerData>
+          <Item>D</Item>
+          <Description>Long stay</Description>
+        </ListerData>
+	  </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>enters_count</Key>
+    <List>
+      <_data>
+	    <ListerData>
+          <Item>1</Item>
+          <Description>Single entry</Description>
+        </ListerData>
+			    <ListerData>
+          <Item>2</Item>
+          <Description>Double entries</Description>
+        </ListerData>
+			    <ListerData>
+          <Item>M</Item>
+          <Description>Multiple entries</Description>
+        </ListerData>
+	  </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>visa_term</Key>
+    <List>
+      <_data>
+	  <ListerData>
+<Item>D</Item>
+<Description>up to 3 months (valid for double and multiple entry A, B, C visas)</Description>
+</ListerData>
+<ListerData>
+<Item>E</Item>
+<Description>up to 6 months (valid for double entry B visas and multiple entry B , C and D visas)</Description>
+</ListerData>
+<ListerData>
+<Item>F</Item>
+<Description>up to 1 year (valid for multiple entry B, C and D visas)</Description>
+</ListerData>
+<ListerData>
+<Item>G</Item>
+<Description>up to 2 years (valid for multiple entry C visas only)</Description>
+</ListerData>
+<ListerData>
+<Item>H</Item>
+<Description>up to 3 years (valid for multiple entry C visas only)</Description>
+</ListerData>
+<ListerData>
+<Item>I</Item>
+<Description>up to 4 years (valid for multiple entry C visas only)</Description>
+</ListerData>
+<ListerData>
+<Item>J</Item>
+<Description>up to 5 years (valid for multiple entry C visas only)</Description>
+</ListerData>
+	  </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>purpose_other</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>fee</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>fee_currency</Key>
+    <List>
+      <_data>
+	  <ListerData>
+<Item>USD</Item>
+<Description>US Dollars</Description>
+</ListerData>
+<ListerData>
+<Item>EUR</Item>
+<Description>Euro</Description>
+</ListerData>
+	  </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>border_point</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>host_type</Key>
+    <List>
+      <_data>
+	  <ListerData>
+<Item>L</Item>
+<Description>Hosting person </Description>
+</ListerData>
+<ListerData>
+<Item>F</Item>
+<Description>Hosting company or organization </Description>
+</ListerData>
+<ListerData>
+<Item>H</Item>
+<Description>Hotel or temporary address</Description>
+</ListerData>
+	  </_data>
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>host_regnum</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>host_person_id</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>host_id</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>hotels</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>vaucher_company</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+  <KeyListPair>
+    <Key>vaucher_host_company</Key>
+    <List>
+      <_data />
+    </List>
+  </KeyListPair>
+</ArrayOfKeyListPair>
